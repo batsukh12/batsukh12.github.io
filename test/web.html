@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
 <style>
-p:hover, h1:hover, a:hover {
-  background-color: rgb(129, 63, 209);
+#div1 {
+  font-size:48px;
 }
 </style>
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 
-<h1>Welcome to My Homepage</h1>
+<div id="div1" class="fa"></div>
 
-<div class="intro">
-  <h2 id="firstname">My name is Donald</h2>
-  <p id="hometown">I live in Duckburg</p>
-  <p>My <b>best</b> friend is Mickey</p>
-</div>
+<script>
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 4000);
+}
+chargebattery();
+setInterval(chargebattery, 5000);
+</script>
 
-<h2>Links:</h2>
-<p>Here are my favorite websites:</p>
-<a href="https://www.w3schools.com">w3schools.com</a>
-<a href="http://www.disney.com" target="_blank">disney.com</a>
-<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
-<p><b>Note:</b> Mouse over paragraphs, headers, and links to see what is getting a style.</p>
-<p><b>Note:</b> For :hover to work for other than links in IE, a DOCTYPE must be declared.</p>
-
+<p>This example demonstrates how to use an icon library to make an animated effect.</p>
 </body>
 </html>
