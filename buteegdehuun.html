@@ -7,47 +7,185 @@
         <meta name="description" content="TousLesJoursMongolia" />
         <link rel="canonical" href="https://example.com" />
         <title>Нүүр хуудас</title>
+        <style>
+          *{
+            margin: 0;
+            padding: 0;
+          }
+          .container {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .nav-links {
+            flex: 1;
+            text-align: right;
+          }
+          .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+          }
+          .nav-links ul li a {
+            color: #0B0603;
+            text-decoration: none;
+            font-family: 'Inter';
+            font-size: 14px;
+          }   
+          .nav-links ul img {
+            display: relative;
+            margin: 0;
+            top: 10px;
+            right: 100px;
+            width: 30px;
+            height: 30px;
+            background-color: #CD853F;
+          } 
+          .nav-menu{
+            top: 90px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            background-color: #CD853F;
+          }
+          .navtop ul{
+            list-style: none;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            justify-content: space-evenly;
+            justify-items: center;
+            line-height: 50px;
+          } 
+          .navtop ul li a{
+            color: #0B0603;
+            text-decoration: none;
+            font-family: 'Inter';
+            font-size: 18px;
+          } 
+          .nav-links ul li a:hover{
+            color: red;
+          }
+          .main-picture{
+            margin: 0;
+            width: 100%;
+            height: 935px;
+            background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.8),url(/picture/buteegdehuun_cake.jpg));
+            position: relative;
+          }
+          h2{
+            color: white;
+            top: 70%;
+            left: 50%;
+            font-size: 40px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+          }
+          .top-nav ul{ 
+            list-style: none;
+            display: flex; 
+            position: relative; 
+            justify-content: center;
+            gap: 40px;
+            margin-top: -80px;
+          }
+          .top-nav ul li a{ 
+            margin: 0;
+            position: relative;
+            margin-top: 10px;   
+            color: #0B0603;
+            text-decoration: none;
+            font-family: 'Inter';
+            font-size: 14px;
+          } 
+          .products{
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: 300px  300px  300px  300px;
+            grid-template-rows: 350px 350px ;
+            gap: 20px;
+            justify-content: space-evenly ;
+            margin-left: 8%;
+            margin-right: 8%;
+          }
+          .products a:hover{
+            background-color: red;
+          }
+          .products a{
+            border: 2px solid #CD853F;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            flex-basis: 20%;
+            justify-content: auto;
+            padding: 10px;
+            border-radius: 15px ;
+            margin-bottom:10px;
+            box-sizing: border-box;
+          }
+          .products img{
+            width:100%;
+            height:75%;
+            position: flex;
+          }
+          .products a{
+            padding: 10px;
+            text-align: center;
+          }
+        </style>
     </head>
 <body>
   <header>
-    <section>
+    <section class="container">
       <div>
         <h1>
-          <a href="/index.html">Tous les Jours</a>
+          <a href="/index.html" class="item1">Tous les Jours</a>
         </h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="/feedback.html">Санал хүсэлт</a></li>
+      <nav class="nav-links">
+        <ul >
+          <img src="https://www.pngitem.com/pimgs/m/69-690659_expert-customer-feedback-icon-png-transparent-png.png"/>
+          <li><a href="/feedback.html" >Санал хүсэлт</a></li>
           <li><a href="/sags.html">Сагс </a></li>
-          <li><a href="/signin.html">Нэвтрэх</a></li>
+          <li><a href="/signin.html" >Нэвтрэх</a></li>
         </ul>
       </nav>
     </section>
-    <section>
-      <nav>
+    <section class="nav-menu">
+      <nav class="navtop">
         <ul>
           <li><a href="/buteegdehuun.html">Бүтээгдэхүүн</a></li>
-          <li><a href="/medee.html">Мэдээ Мэдээлэл</a></li>
+          <li><a href="/medee.html">Мэдээлэл</a></li>
           <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
         </ul>
       </nav>
     </section>
   </header>
   <main>
+    <div class="main-picture">
+      <img src="https://s2.best-wallpaper.net/wallpaper/3840x2160/1907/Chocolate-cake-berries-candles_3840x2160.jpg"alt="buteegdehuuni nuur zuarag" width="100%" height="800px"/>
+    </div>
     <h2>Breads & Pastry</h2>
-    <nav>
+    <nav class="top-nav">
       <ul>
-        <li>махан төрөл</li>
-        <li>донут </li>
-        <li>жимс & кремтэй</li>
+        <li><a href="/sags.html"> сүүн кремтэй  </a></li>
+        <li><a href="/sags.html">шоколодтай  </a> </li>
+        <li><a href="/sags.html">special </a></li>
+        <li><a href="/sags.html">хүүхдийн </a></li>
       </ul>
     </nav>
-    <div>
-      <a href="/sags.html"> <img src="/picture/choco.png" alt="chocolate bread"  /></a> chocolate chip scone</a>
-      <a href="/sags.html"> <img src="/picture/ChocoCream.jpg" alt="chocolate" />Taro cream bread</a>
-      <a href="/sags.html"> <img src="/picture/suas.jpg" alt="suas" /> buttercream bread</a>
-      <a href="/sags.html"> <img src="/picture/choco.png" alt="check"  /> chocolate chip scone</a>
+    <div class="products">
+      <a href="/sags.html"> <img src="/picture/freshpearlcake.jpg" alt="pearl_cake"/>Fresh pearl cake</a>
+      <a href="/sags.html"> <img src="/picture/strawberrycake.jpg" alt="strawberry_cake"/>Fresh strawberry mix cake</a>
+      <a href="/sags.html"> <img src="/picture/nomurocake.jpg" alt="nomura_cake"/>Fresh nomura cake</a>
+      <a href="/sags.html"> <img src="/picture/mangocloudcake.jpg" alt="mangocloudcake"/>Mango cloud cake</a>
+      <a href="/sags.html"> <img src="/picture/yogurtcake.jpg" alt="yogurt_cake"/>Blueberry yogurt cream cake</a>
+      <a href="/sags.html"> <img src="/picture/fruitcreamcake.jpg" alt="fruitcreamcake" />Fruit fresh cream cake</a>
+      <a href="/sags.html"> <img src="/picture/rollroundcake.jpg" alt="rollroundcake" />Strawberry roll round cake</a>
+      <a href="/sags.html"> <img src="/picture/blueberrychiffoncake.jpg" alt="blueberrychiffoncake" />Blueberry chiffon No.3</a>
     </div>
   </main>
   <footer>
