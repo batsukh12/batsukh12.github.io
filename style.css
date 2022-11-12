@@ -1,1 +1,90 @@
 
+/*-----------nuur css start-------------*/
+:root{  
+  background: #EEEDED;
+  --primary-color: white;
+  --secondary-color:black;
+  --head-color: #F9F4E9;
+  --foot-color : #2E2F2E;
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif !important;
+  list-style: none;
+}
+.header-menu{
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--head-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  color: var(--secondary-color);
+}
+.header-menu  a i{
+  font-size: 2.5rem;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.mid-menu >ul{
+  display: flex;
+  gap: 2rem;
+  margin-right: 100px;
+}
+.header-menu .logo{
+  text-decoration: none;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  font-family: 'Aref Ruqaa';
+  color: var(--secondary-color);
+}
+.header-menu .mid-menu a{
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  margin: 0 1rem;
+}
+.header-menu .mid-menu a:hover{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.footer-sec{
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--foot-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-family: 'Mulish', sans-serif !important;
+}
+.footer-sec .address a{
+  color: var(--primary-color);
+  font-family: 'Aref Ruqaa' ;
+  font-size: 0.8rem;
+}
+.footer-sec i{
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+.footer-sec .social-acc i{
+  list-style: none;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/*-----------nuur css end-------------*/
