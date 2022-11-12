@@ -6,20 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="TousLesJoursMongolia" />
     <link rel="canonical" href="https://example.com" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Aref Ruqaa"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Aref Ruqaa"
+    rel="stylesheet" />
+    <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Mulish"
-    />
-    <link
-      rel="stylesheet"
+    />  
+    <link   rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
+    <link  rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
@@ -32,7 +27,17 @@
       </h1>
       <nav class="mid-menu">
         <ul>
-          <li><a href="/buteegdehuun.html">Бүтээгдэхүүн</a></li>
+          <div class="dropbtn">
+            <li ><a href="/buteegdehuun.html">Бүтээгдэхүүн</a></li>
+            <div class="dropdown-menu">
+              <ul >
+                <li><a href="#">cake</a></li>
+                <li><a href="#">breads</a></li>
+                <li><a href="#">desserts</a></li>
+                <li><a href="#">drinks</a></li>
+              </ul>
+            </div>
+          </div>
           <li><a href="/medee.html">Мэдээлэл</a></li>
           <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
         </ul>
@@ -49,20 +54,55 @@
         ></a>
       </div>
     </header>
-    <main>
-      <section>
-        <h2>Freshly Baked Everyday</h2>
-        <div>Өдөр бүр шинэхэн шинэлэг амтыг танд</div>
-        <button>learn more</button>
+    <main class="home">
+      <section class="main-picture" >
+        <img src="picture/nuurhuudas2.jpg">
+        <div class="description">
+          <h2>Freshly Baked Everyday</h2>
+          <div>Өдөр бүр шинэхэн шинэлэг амтыг танд</div>
+          <a href="/taniltsuulga.html"><input type="button" class="button" value="цааш үзэх"></a>
+        </div>  
       </section>
-      <section>
+      <section class="main-products">
         <div>
           <h2>Онцлох бүтээгдэхүүнүүд</h2>
         </div>
+        <div class="products-container">  
+          <div class="products-nuur">
+            <a href="#"><img src="picture/yogurtcake.jpg" alt="yogurt-cake"></a>
+            <h4> Fresh blueberry cake</h4>
+            <h6>Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу
+              Хэмжээ-18см</h6>
+          </div>
+          <div class="products-nuur">
+            <a href="#"><img src="picture/yogurtcake.jpg" alt="yogurt-cake"></a>
+            <h4> Fresh blueberry cake</h4>
+            <h6>Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу
+              Хэмжээ-18см</h6>
+          </div>
+          <div class="products-nuur">
+            <a href="#"><img src="picture/yogurtcake.jpg" alt="yogurt-cake"></a>
+            <h4> Fresh blueberry cake</h4>
+            <h6>Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу
+              Хэмжээ-18см</h6>
+          </div>
+          <div class="products-nuur">
+            <a href="#"><img src="picture/yogurtcake.jpg" alt="yogurt-cake"></a>
+            <h4> Fresh blueberry cake</h4>
+            <h6>Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу
+              Хэмжээ-18см</h6>
+          </div>
+        </div>
       </section>
-      <div>
-        <h3>Салбарын мэдээлэл</h3>
-        <h3>байршил болон цагийн хуваарь</h3>
+      <div class="surdchilgaa">
+        <div>
+          <a href="/medee.html"><img src="picture/10.jpg"></a>
+          <h5> “Хүннү-2222” хороололд шинэ салбараа нээлээ...</h5>
+        </div>
+        <div >
+          <a href="/medee.html"><img src="picture/medee2.jpg"></a>
+          <h5>“Найрсаг хамт олон өдөр бүр таныг угтаж байна.”</h5>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -79,7 +119,7 @@
           ><a href="tel:99887766">(976) 7575-1010</a><br />
         </address>
       </section>
-      <div class="social">
+        <div class="social">
         <a href="https://www.facebook.com/TousLesJoursMongolia"
           ><i class="fa fa-facebook"></i
         ></a>
