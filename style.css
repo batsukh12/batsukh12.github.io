@@ -29,32 +29,34 @@
   color: var(--secondary-color);
   display: grid;
   grid-template-columns: 30% 50% 20%;
-  grid-template-rows: 5rem;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
 }
-
 .logo {
+  margin-top: -0.8rem;
   grid-column-start: 1;
   font-size: 2.2rem;
   font-family: "Aref Ruqaa";
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .logo a {
-  margin-top: 0.5rem;
   color: var(--secondary-color);
   color: #0D4633;
 }
 
 .header-menu .mid-menu {
-  margin-top: 2.2rem;
+  display: flex;
   grid-column-start: 2;
   justify-content: center;
+  align-items: center;
 }
 .mid-menu ul {
   gap: 7rem;
   display: flex;
   justify-content: center;
-  
   align-items: center;
 }
 .header-menu .mid-menu a {
@@ -253,7 +255,24 @@
   width: 30px;
   height: 30px;
 }
+.home .main-products {
+  margin-top: 5rem;
+  height: 15vh;
+  background: url("picture/sectionph.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-bottom: 5rem;
+}
+.home .main-products div h2{  
+  text-align: center;
+  justify-content: center;  
+}
+.home .products-container{
+ float:bottom;
+  margin-top: 5rem; 
+}
 .main-products .products-nuur {
+  position: flex;
   margin-top: 4%;
   background: #FFFFFF;
   border: 2px solid rgba(205, 133, 63, 0.4);
@@ -346,6 +365,7 @@
   background: var(--foot-color);
   display: grid;
   grid-template-columns: 80% 20%;
+  height: 16vh;
   color: var(--primary-color);
   font-size: 0.8rem;
 }
