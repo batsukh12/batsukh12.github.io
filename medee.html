@@ -24,6 +24,77 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>TousLesJoursMongolia</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .huree {
+        width: 80%;
+        height: screen;
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      class News {
+        constructor(image, title, date, tovch) {
+          this.image = image;
+          this.title = title;
+          this.date = date;
+          this.tovch = tovch;
+        }
+        render() {
+          return `<article>
+          <img src="${this.image}" />
+          <p>${this.date}</p>
+          <h4>${this.title}</h4>
+          <a href="${this.tovch}">Дэлгэрэнгүй</a>
+        </article>`;
+        }
+      }
+
+      function App(articles, targetElement) {
+        let retVal = "";
+        for (const article of articles) {
+          let articleObj = new News(
+            article.image,
+            article.title,
+            article.date,
+            article.tovch
+          );
+          retVal += articleObj.render();
+        }
+        document
+          .getElementById(targetElement)
+          .insertAdjacentHTML("beforeend", retVal);
+      }
+
+      const newsData = {
+        catefories: ["Cat1", "Cat2", "Cat3"],
+        articles: [
+          {
+            image: "/picture/medee1.jpg",
+            date: "11-р сарын 3 2022",
+            title: "Сонгорөбоырйө",
+            tovch: "index.html",
+          },
+          {
+            image: "/picture/medee1.jpg",
+            date: "11-р сарын 3 2022",
+            title: "Сонгорөбоырйө",
+            tovch: "index.html",
+          },
+          {
+            image: "/picture/medee1.jpg",
+            date: "11-р сарын 3 2022",
+            title: "Сонгорөбоырйө",
+            tovch: "index.html",
+          },
+        ],
+      };
+      window.onload = () => App(newsData.articles, "myTarget");
+    </script>
   </head>
   <body>
     <header class="header-menu">
@@ -50,34 +121,11 @@
       </div>
     </header>
     <main>
-      <h1>Шинэ бүтээгдэхүүнээ танилцуулъя.</h1>
-      <img src="/picture/newproducts.jpg" alt="new" width="600" height="450" />
-      <button type="button">Дэлгэрэнгүй</button>
-
-      <div>
-        <img src="/picture/medee1.jpg" alt="Medee2" width="150" height="150" />
-        <p>2022-06-23</p>
-        <h2>Сонгогдсон бялуунууд 30% хямдарлаа</h2>
-        <button type="button">Дэлгэрэнгүй</button>
+      <div class="huree">
+        <section id="myTarget">
+          <h1>Garchig</h1>
+        </section>
       </div>
-
-      <div>
-        <img src="/picture/medee2.jpg" alt="Medee1" width="150" height="150" />
-        <p>2022-09-22</p>
-        <h2>
-          "Өдөр бүр шинэ" уриатай TOUS les JOURS бейкери “Хүннү-2222” хороололд
-          шинэ салбараа нээлээ
-        </h2>
-        <button type="button">Дэлгэрэнгүй</button>
-      </div>
-      <div>
-        <img src="/picture/medee3.jpg" alt="Medee3" width="150" height="150" />
-        <p>2022-09-25</p>
-        <h2>Тү Лэ Жүр-ийн 5 жилийн ойн хүрээнд сугалаатай бэлэгтэй худалдаа</h2>
-        <button type="button">Дэлгэрэнгүй</button>
-      </div>
-      <button type="button">Өмнөх хуудас</button>
-      <button type="button">Дараагийн хуудас</button>
     </main>
     <footer class="footer">
       <section>
