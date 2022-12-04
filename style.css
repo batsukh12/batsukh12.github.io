@@ -6,8 +6,10 @@
   --head-color: #f9f4e9;
   --foot-color: #2e2f2e;
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  --brand-color: #0d4633;
+  --eng-font: 'Aref Ruqaa';
 }
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,9 +18,7 @@
   text-decoration: none;
   list-style: none;
 }
-
 /*-----------header-------------*/
-
 .header-menu {
   text-decoration: none;
   position: fixed;
@@ -31,18 +31,18 @@
   grid-template-columns: 30% 50% 20%;
   height: 10vh;
   text-align: center;
-  justify-content: center;
 }
 .logo {
   margin-top: -0.8rem;
   grid-column-start: 1;
   font-size: 2.2rem;
-  font-family: "Aref Ruqaa";
+  font-family: var(--eng-font);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .logo a {
+  flex-direction: row;
   color: var(--secondary-color);
   color: #0D4633;
 }
@@ -76,6 +76,7 @@
 }
 .end-menu i{
   font-size: 1.8rem;
+  color: black;
 }
 .header-menu .end-menu a:hover{ 
   font-size: 2.2rem;
@@ -100,7 +101,6 @@
   padding-right: 2rem;
   text-align: center;
   border-bottom: 1px solid black;
-
 }
 .dropbtn .dropdown-menu a:hover{
   background-color: var(--background);
@@ -116,111 +116,187 @@
   transition: .5s ease-in;
   transform: rotate(180deg);
 }
-@media(max-width: 991px){
-  html{
-    font-size: 50%;
-  }
-  .header-menu{
-    padding: 1.3rem 2rem;
-  }
-  .home .main-picture{
-    margin-left: 0;
-    width: 100%;
-   }
-}
-@media(max-width: 768px){
-  .end-menu #menu-btn{
-    display: inline-block;
-  }
-  .header-menu .mid-menu{
-    position: absolute;
-    top: 70%;
-    right: -100%;
-    width: 25rem;
-    background-color: #f9f4e9;
-    height: 80vh;
-  }
-  .header-menu .mid-menu.nav-toggle{
-    right: 0;
-  }
-  .header-menu .mid-menu >ul{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    float: left;
-  }
-   .header-menu .mid-menu a{
-    display: block;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    padding-left: 2rem;
-    color: var(--secondary-color);
-   }
-   .home .main-picture{
-    margin-left: 0;
-    width: 100%;
-   }
-}
-@media(max-width:600px){
-  html{
-    font-size: 50%;
-  }
-  .home .main-products .products-nuur a {
-    font-size: 100%;
-  }
-  .main-products .products-nuur a h6{
-    font-size: 100%;
-  }
-}
-@media(max-width:480px){
-  .home .main-products .products-nuur h4{
-    font-size: 100%;
-  }
-  .main-products .products-nuur a h6{
-    font-size: 100%;
-  } 
-}
+
 /*--------main--------*/
+/*-------- main nuur zurag---------*/
 .home{
   padding: 0;
 }
-.home .main-picture img{
-  width: 100%; 
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
 .home .main-picture .description{
-  margin-top: -170px; 
-  text-align:center;
-  font-size: 1.5rem;
-  font-family: 'Mulish', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  top: 10vh;
+  background: url("picture/nuurhuudas2.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
+  text-align: center;
 }
-.home .main-picture .description h2{
+.home  .description h2{
+  margin-top: 25%;
+  font-size: 2.5rem;
   font-family: 'Aref Ruqaa';
+}
+.home  .description p{
+  font-size: 1.5rem;
+  font-family:  'Mulish', sans-serif !important;
 }
 .description .button{
   margin-top: 1rem;
-  width: 150px;
+  width: 120px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3); 
   border: 1px solid #000000;
   border-radius: 5px;
 }
 .description .button:hover{
   background: rgba(255, 255, 255, 0.6);
 }
-
-.main-products h2{
-  margin-top: 3rem;
+/*-------- main nuur zurag end---------*/
+/** bread nuur zurag****/
+.home .breads-home{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background: url("picture/breads-nuur.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
   text-align: center;
 }
+.home .breads-home h2{
+  margin-top: 9rem;
+  font-size: 2.5rem;
+  font-family: 'Aref Ruqaa';
+  color: #fff;
+}
+/**drink nuur zurag***/
+.home .drinks-home{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background: url("picture/drinks-wallpaper.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
+  text-align: center;
+}
+.home .drinks-home h2{
+  margin-top: 9rem;
+  font-size: 2.5rem;
+  font-family: 'Aref Ruqaa';
+  color: #fff;
+}
+/*** desserts nuur zurag ***/
+.home .dessert-home{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background: url("picture/dessertwall.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
+  text-align: center;
+}
+.home .dessert-home h2{
+  margin-top: 9rem;
+  font-size: 2.5rem;
+  font-family: 'Aref Ruqaa';
+  color: #fff;
+}
+/*------buteegdehuun cake nuur zurag-------*/
+.home .buteegdehuun-home{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background: url("picture/cake-ph2.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
+  text-align: center;
+}
+.home .buteegdehuun-home h2{
+  margin-top: 7rem;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: 'Aref Ruqaa';
+}
+.home .main-products .top-nav{
+  margin-top: 5%;
+  height: 15vh;
+  display:flex;
+  background: linear-gradient(rgba(15, 108, 52, 0) ,rgba(0, 0, 0, 0.5)), url("picture/sectionph.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
+}
+.home .main-products .top-nav a{
+  display: flex;
+  padding-top: 2.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family:  'Mulish', sans-serif !important;
+}
+.main-products .top-nav >ul{
+  display: flex;
+  gap: 2rem;
+}
+.main-products .top-nav a:hover{
+  border-bottom: 2px solid #fff;
+}
+.main-products .prod-name h3{
+  font-family: 'Aref Ruqaa';
+  font-size: 2rem;
+  display: flex;
+  margin-top:2%;
+  color: var(--brand-color);
+  justify-content: center;
+
+}
+.main-products .shop-bot{
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  z-index: 99;
+}
+.main-products .shop-bot i{
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  padding-top: 0.7rem;
+  font-size: 1.5rem;
+  color: black;
+}
+/**********buteegdehuun cake nuur zurag end-------*/
+
 .products-container .products-nuur:hover{
   animation: pop 0.3s linear 1;
-}
+} 
 @keyframes pop{
   50%  {transform: scale(1.2);}
+}.home .sectionph {
+  display: flex;
+  margin-top: 5rem;
+  height: 15vh;
+  background: url("picture/sectionph.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-bottom: 3rem;
+  justify-content: center;  
+  text-align: center;
+}
+.home .sectionph h2{  
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-family:  'Mulish', sans-serif !important;
+  color: #fff;
 }
 .main-products .products-container{
   display: grid;
@@ -234,42 +310,11 @@
   justify-content: center;
   text-align: center;
   overflow: hidden; 
-}
-.main-products .top-nav{
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-.main-products .top-nav >ul{
-  display: flex;
-  gap: 2rem;
-}
-.main-products .top-nav a{
-  font-family: 'Mulish', sans-serif !important;
-  color: var(--secondary-color);
-}
-.main-products .top-nav a:hover{
-  border-bottom: 2px solid #0D4633;
+  bottom: ;
 }
 .main-products .products-nuur img{
   width: 30px;
   height: 30px;
-}
-.home .main-products {
-  margin-top: 5rem;
-  height: 15vh;
-  background: url("picture/sectionph.jpg") no-repeat;
-  background-size: cover !important;
-  background-position: center !important;
-  margin-bottom: 5rem;
-}
-.home .main-products div h2{  
-  text-align: center;
-  justify-content: center;  
-}
-.home .products-container{
- float:bottom;
-  margin-top: 5rem; 
 }
 .main-products .products-nuur {
   position: flex;
@@ -279,6 +324,13 @@
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+.main-products .products-nuur .star-rate{
+  display: inline-block;
+}
+.main-products .products-nuur .checked{
+  color: orange;
 }
 .main-products .products-nuur img{
   padding-top: 10px;
@@ -303,7 +355,6 @@
   justify-content: center;
   font-family: 'Aref Ruqaa';
   gap: 3rem;
- 
 }
 .main-products .products-nuur .prod-price h5{
   margin-top: 0.5rem;
@@ -316,24 +367,36 @@
   cursor: pointer;
   font-family: 'Mulish', sans-serif !important;
   font-size: 0.7rem;
-  background-color: white;
-  width: 5rem;
-  height: 1.3rem;
-  border: 1px solid black;
-  border-radius: 2px;
+  background-color: orange;
+  width: 6rem;
+  height: 1.4rem;
+  border: 1px solid orange;
+  border-radius: 4px;
   text-align: center;
+  color: #fff;
 }
 .main-products .products-nuur .button:hover{
-  border: 2px solid #0D4633;
-  color:#0D4633
+  transform: scale(1.2);  
+}
+.home .drinks-surdchilgaa{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+.home .drinks-surdchilgaa img{ 
+  margin-top: 2rem;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
 }
 .home .surdchilgaa{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: auto;
-  margin-top:2%;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
   justify-content: center;
   position: flex;
   text-align: center;
@@ -343,6 +406,7 @@
   margin-top: 2rem;
   width: 90%;
   height: 80%;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
 }
 .home .surdchilgaa img:hover{
   animation: pop 0.5s linear 1;
@@ -356,6 +420,89 @@
   font-size: 1.1rem;
   text-align: center;
   padding-bottom: 2rem;
+  color:#0D4633;
+}
+
+/*----------prod delgerengui---------*/
+.home-prod-d{
+  display: flex;
+}
+.products-del{
+  margin-top: 5rem;
+  margin-left: 10%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: repeat( 2,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 4rem;
+}
+.products-del  img{
+  width: 70vh;
+  height:70vh;
+}
+.products-del .describ{
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 1.5rem;
+}
+.products-del .describ h4{
+  margin-top: 8rem;
+  font-family: 'Aref Ruqaa';
+  font-size: 2.4rem;
+  color:#0D4633;
+}
+.products-del .desc-price{
+  margin-top: 2%;
+  gap:  3rem;
+}
+.products-del h5{
+  font-family: 'Aref Ruqaa';
+}
+.counter{
+  margin-top: 2%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+ }
+ .counter .btn{
+  background-color: orange;
+  width: 40px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 900;
+  color: #202020;
+  cursor: pointer;
+ }
+ .counter .count p{
+  font-size: 18px;
+  font-family: 'Aref Ruqaa';
+  font-weight: 900;
+  color: #202020;
+ }
+.products-del .desc-price .button{
+  margin-top: 2%;
+  cursor: pointer;
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 1rem;
+  background-color: orange;
+  width: 12rem;
+  height: 2rem;
+  border: 1px solid orange;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold !important;
+}
+.home-prod-d .holbootoi-buteegdehuun h3{
+  bottom: 5rem;
+  left: 5rem;
+  justify-content: bottom;
 }
 /*-----------footer-------------*/
 
@@ -365,9 +512,9 @@
   background: var(--foot-color);
   display: grid;
   grid-template-columns: 80% 20%;
-  height: 16vh;
   color: var(--primary-color);
   font-size: 0.8rem;
+  font-family: 'Mulish', sans-serif !important;
 }
 .footer section {
   margin-top: 1rem;
@@ -404,3 +551,107 @@
 }
 /*-----------nuur css end-------------*/
 
+
+/*------media query--------*/
+@media(max-width: 991px){
+  html{
+    font-size: 50%;
+  }
+  .header-menu{
+    padding: 1.3rem 2rem;
+  }
+  .home .main-picture{
+    margin-left: 0;
+    width: 100%;
+   }
+   .products-nuur  h4{
+    font-size: 150%;
+  } 
+  .home .main-products .products-nuur a h4{
+    font-size: 2rem;
+  } 
+  .home .main-products .products-nuur a h6{
+    font-size: 1.5rem;
+  }
+  .home .main-products .products-nuur .prod-price {
+   
+    font-size: 2rem;
+  }
+  .home .main-products .products-nuur .prod-price .button{
+    width: 80px;
+    height: 20px;
+    font-size: 1rem;
+  }
+  .home-prod-d .products-del .describ{
+    margin-top: 10rem;
+    font-size: 2.2rem;
+  }
+  .home-prod-d .products-del img{
+    width: 50vh;
+    height: 50vh;
+  }
+}
+@media(max-width: 768px){
+  .end-menu #menu-btn{
+    display: inline-block;
+  }
+  .header-menu .mid-menu{
+    position: absolute;
+    top: 70%;
+    right: -100%;
+    width: 25rem;
+    background-color: #f9f4e9;
+    height: 80vh;
+  }
+  .header-menu .mid-menu.nav-toggle{
+    right: 0;
+  }
+  .header-menu .mid-menu >ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    float: left;
+  }
+   .header-menu .mid-menu a{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    color: var(--secondary-color);
+   }
+   .home .main-picture{
+    margin-left: 0;
+    width: 100%;
+   }
+   .home-prod-d .products-del img{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media(max-width:600px){
+  html{
+    font-size: 50%;
+  }
+  .home-prod-d .products-del .describ{
+    display: grid;
+    margin-top: 5px;
+    font-size: 2.2rem;
+  }
+  .home-prod-d .products-del img{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+@media(max-width:480px){
+  .home .main-products .products-nuur h4{
+    font-size: 100%;
+  }
+  .header-menu .logo a{
+    text-align: center;
+    font-size:1.7rem;
+  }
+  .products-del .describ h4{
+    margin: 0;
+  }
+}
