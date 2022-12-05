@@ -23,7 +23,59 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>TousLesJoursMongolia</title>
+    <title>Signin</title>
+    <style>
+      .signin_main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 84vh;
+      }
+      .signin1 {
+        width: 30%;
+        background-color: #fff;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.3rem;
+      }
+      .signin2 {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      #input {
+        width: 100%;
+        padding: 0.8rem;
+        height: 14%;
+        margin-top: 5%;
+        border: solid #000 1px;
+        border-radius: 0.3rem;
+      }
+      .send {
+        width: 100%;
+        margin-top: 5%;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        background-color: #f9f4e9;
+      }
+      @media (max-width: 800px) {
+        .signin1 {
+          width: 40%;
+          font-size: 90%;
+        }
+      }
+      @media (max-width: 500px) {
+        .signin1 {
+          width: 60%;
+          font-size: 80%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="header-menu">
@@ -50,15 +102,15 @@
       </div>
     </header>
     <main>
-      <div>
-        <div>
-          <h2>Нэвтрэх</h2>
-          <input type="email" name="" id="" placeholder="Имэйл" />
-          <input type="password" name="" id="" placeholder="Нууц үг" />
-          <button>Нэвтрэх</button>
+      <div class="signin_main">
+        <div class="signin1">
+          <div class="signin2">
+            <h2>Нэвтрэх</h2>
+            <input type="text" name="" id="input" placeholder="Имэйл" />
+            <input type="text" name="" id="input" placeholder="Нууц үг" />
+            <button class="send">Нэвтрэх</button>
+          </div>
         </div>
-        <a href="/index.html">Нууц үг сэргээх</a>
-        <a href="/index.html">Бүртгүүлэх</a>
       </div>
     </main>
     <footer class="footer">

@@ -24,6 +24,61 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>TousLesJoursMongolia</title>
+    <style>
+      .hurgelt {
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .hurgelt1 {
+        margin-bottom: -10vh;
+        width: 80%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 0.2rem;
+      }
+      .hurgelt2 {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+      #hayg {
+        width: 100%;
+        height: 30%;
+        border: solid burlywood 1px;
+        border-radius: 0.3rem;
+      }
+      #hadgalah {
+        width: 25%;
+        background-color: bisque;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+      }
+      #uurchluh {
+        width: 25%;
+        background-color: rgb(206, 203, 203);
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+      }
+      @media (max-width: 500px) {
+        #uurchluh {
+          font-size: 70%;
+        }
+        #hadgalah {
+          font-size: 70%;
+        }
+      }
+      
+    </style>
   </head>
   <body>
     <header class="header-menu">
@@ -50,11 +105,17 @@
       </div>
     </header>
     <main>
-      <section>
-          <h2>Хүргэлтийн хаяг</h2><br>
-          <input type="text" placeholder="энд хаягаа оруул"/ width="300" height="50"><br>
-          <button type="button" name="хадгалах">хадгалах</button>
-          <button type="button" name="өөрчлөх ">өөрчлөх</button>
+      <section class="hurgelt">
+        <div class="hurgelt1">
+          <div class="hurgelt2">
+            <h2>Хүргэлтийн хаяг</h2>
+            <input type="text" name="" id="hayg" placeholder="Энд хаягаа бичнэ үү." />
+            <div class="hayg_button">
+              <button id="hadgalah" type="button" name="хадгалах">хадгалах</button>
+              <button id="uurchluh" type="button" name="өөрчлөх ">өөрчлөх</button>
+            </div>
+          </div>
+        </div>
       </section>
       <section>
         <h1>таны сонгосон бүтээгдэхүүн </h1><br>

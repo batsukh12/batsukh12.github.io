@@ -26,14 +26,23 @@
     <title>TousLesJoursMongolia</title>
 
     <style>
-      body {
+      .huree {
         display: flex;
         justify-content: center;
       }
-      .huree {
-        width: 80%;
-        height: screen;
+      .news {
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+        width: 60%;
         border: 1px solid black;
+        display: flex;
+      }
+      img {
+        width: 10rem;
+        border-radius: 20%;
+      }
+      article {
+        margin-top: 2rem;
       }
     </style>
     <script>
@@ -75,20 +84,22 @@
         articles: [
           {
             image: "/picture/medee1.jpg",
-            date: "11-р сарын 3 2022",
-            title: "Сонгорөбоырйө",
+            date: "2022-06-23",
+            title: "Сонгогдсон бялуунууд 30% хямдарлаа.",
             tovch: "index.html",
           },
           {
-            image: "/picture/medee1.jpg",
-            date: "11-р сарын 3 2022",
-            title: "Сонгорөбоырйө",
+            image: "/picture/medee2.jpg",
+            date: "2022-09-22",
+            title:
+              '"Өдөр бүр шинэ" уриатай TOUS Les JOURS бейкери "Хүннү-2222" хороололд шинэ салбараа нээлээ.',
             tovch: "index.html",
           },
           {
-            image: "/picture/medee1.jpg",
-            date: "11-р сарын 3 2022",
-            title: "Сонгорөбоырйө",
+            image: "/picture/medee3.jpg",
+            date: "2022-09-25",
+            title:
+              "Тү Лэ Жүрийн 5-н жилийн ойн хүрээнд сугалаатай бэлэгтэй худалдаа",
             tovch: "index.html",
           },
         ],
@@ -122,11 +133,12 @@
     </header>
     <main>
       <div class="huree">
-        <section id="myTarget">
-          <h1>Garchig</h1>
-        </section>
+        <div class="news">
+          <section id="myTarget"></section>
+        </div>
       </div>
     </main>
+
     <footer class="footer">
       <section>
         <h3>Бидэнтэй холбогдох :</h3>

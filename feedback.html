@@ -29,9 +29,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 84vh;
       }
       .feedback1 {
-        margin: 23vh;
         width: 40%;
         background-color: #fff;
         height: 40vh;
@@ -43,12 +43,12 @@
       .feedback2 {
         width: 80%;
         height: 80%;
-        background-color: #fff;
       }
-      #input {
+      #feedback {
         width: 100%;
         height: 55%;
         margin-top: 5%;
+        padding: 0.8rem;
         border: solid #000 1px;
         border-radius: 0.3rem;
       }
@@ -57,13 +57,18 @@
         margin-top: 5%;
         padding: 0.5rem;
         border-radius: 0.3rem;
+        background-color: #f9f4e9;
       }
-      ::placeholder {
-        position: relative;
-        display: flex;
-        align-self: flex-start;
-        top: -30%;
-        left: 5%;
+      @media (max-width: 900px) {
+        .feedback1 {
+          width: 60%;
+        }
+      }
+      @media (max-width: 500px) {
+        .feedback1 {
+          width: 80%;
+          font-size: 80%;
+        }
       }
     </style>
   </head>
@@ -96,12 +101,13 @@
         <div class="feedback1">
           <div class="feedback2">
             <h2>Санал хүсэлт</h2>
-            <input
-              type="text"
-              name=""
-              id="input"
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              cols="50"
               placeholder="Энд бичнэ үү..."
-            />
+            ></textarea>
             <button class="send">Илгээх</button>
           </div>
         </div>
