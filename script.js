@@ -1,4 +1,5 @@
 
+/** menu bar  */
 $(document).ready(function() {
     $('#menu-btn').click(function() {
         $(this).toggleClass('fa fa-times');
@@ -24,4 +25,11 @@ function minus(){
 
 function listChange(){
     document.getElementById('lists').style.cssText = 'border-bottom: 2px solid #fff';
+}
+/***   shop bot sagsalah too */
+var count=0;
+function shopping(){
+    count++;
+    document.getElementById('shop-count').innerHTML=count;
+    return count;
 }
