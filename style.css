@@ -44,7 +44,7 @@
 .logo a {
   flex-direction: row;
   color: var(--secondary-color);
-  color: #0D4633;
+  color: #0d4633;
 }
 
 .header-menu .mid-menu {
@@ -74,46 +74,46 @@
   align-items: center;
   gap: 2rem;
 }
-.end-menu i{
+.end-menu i {
   font-size: 1.8rem;
   color: black;
 }
-.header-menu .end-menu a:hover{ 
+.header-menu .end-menu a:hover {
   font-size: 2.2rem;
 }
-.dropbtn .dropdown-menu{
+.dropbtn .dropdown-menu {
   display: none;
   position: absolute;
   width: 150px;
   background-color: #f9f4e9;
-  padding-top:2rem;
+  padding-top: 2rem;
   margin-left: -1.5rem;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.dropdown-menu >ul{
+.dropdown-menu > ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.dropbtn .dropdown-menu a{
+.dropbtn .dropdown-menu a {
   color: var(--secondary-color);
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
   border-bottom: 1px solid black;
 }
-.dropbtn .dropdown-menu a:hover{
+.dropbtn .dropdown-menu a:hover {
   background-color: var(--background);
 }
-.dropbtn:hover .dropdown-menu{
+.dropbtn:hover .dropdown-menu {
   display: block;
 }
-#menu-btn{
+#menu-btn {
   font-size: 1.8rem;
   display: none;
 }
-.fa-time{
-  transition: .5s ease-in;
+.fa-time {
+  transition: 0.5s ease-in;
   transform: rotate(180deg);
 }
 
