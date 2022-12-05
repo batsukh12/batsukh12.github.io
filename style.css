@@ -8,6 +8,7 @@
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   --brand-color: #0d4633;
   --eng-font: 'Aref Ruqaa';
+  --mongolia-font: 'Mulish', sans-serif !important;
 }
 *{
   margin: 0;
@@ -446,7 +447,7 @@
   margin-right: 5%;
   display: grid;
   grid-template-columns: repeat( 2,1fr);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
   gap: 4rem;
 }
@@ -520,6 +521,7 @@
 /*-----------footer-------------*/
 
 .footer {
+  margin-top: 3rem;
   text-decoration: none;
   width: 100%;
   background: var(--foot-color);
@@ -640,6 +642,9 @@
     width: 100%;
     height: 100%;
   }
+  .home-prod-d .counter{
+    width: 30%;
+  }
 }
 @media(max-width:600px){
   html{
@@ -666,5 +671,18 @@
   }
   .products-del .describ h4{
     margin: 0;
+  }
+  .home-prod-d .products-del{
+    margin-top: 20%;
+  }
+  .home-prod-d .describ h4{
+    font-size: 3rem;
+  }
+  .home-prod-d .counter{
+    width: 50%;
+    display: flex;
+  }
+  .home-prod-d a{
+    display: flex;
   }
 }
