@@ -24,6 +24,119 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>TousLesJoursMongolia</title>
+    <style >
+      .heading{
+  text-align: center;
+  color:rgb(15, 15, 15);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Mulish', sans-serif !important;
+}
+
+
+/*-----------taniltsuulga iimage ehlew thome -----*/
+.thome{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  top: 10vh;
+  background: url("picture/taniltsuulga-cake.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: center;  
+  text-align: center;
+}
+
+.thome .content{
+  max-width: 60rem;
+}
+
+
+/*-----------КОМПАНИЙН ТАНИЛЦУУЛГА menu-------------*/
+
+.menu .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1rem;
+}
+
+.menu .box-container .box{
+  
+  padding:3rem;
+  text-align: center;
+  border:var(--border);   
+}
+
+.menu .box-container .box img{
+  height: 10rem;
+  width: 15rem;
+}
+
+.menu .box-container .box p{
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.6rem;
+
+}
+
+.menu .box-container .box:hover{
+  background:#fff;
+}
+
+
+/*----duusaw--/
+
+
+
+/*-----------bitnii erhem zorlig about-------------*/
+.about .row{
+  display: flex;
+  align-items: center;
+  background:var(--black);
+  flex-wrap: wrap;
+  
+  
+}
+
+.about .row .image{
+  flex:1 1 45rem;
+  
+}
+
+.about .row .image img{
+  width: 100%;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  width: 35rem;
+  height: 26rem;
+}
+
+.about .row .content{
+  
+  flex:1 1 45rem;
+  padding:2rem;
+}
+
+.about .row .content h3{
+  font-size: 2rem;
+  color:rgb(10, 10, 10);
+  font-family: 'Mulish', sans-serif !important;
+}
+
+.about .row .content p{
+  font-size: 1.2rem;
+  color:rgb(12, 12, 12);
+  padding:1rem 0;
+  line-height: 1.8;
+}
+/*----about duusaw---*/
+
+    </style>
   </head>
   <body>
     <header class="header-menu">
@@ -50,31 +163,73 @@
       </div>
     </header>
     <main>
-      <img src="/picture/taniltsuulga.jpg" alt="taniltsuulga" />
-      <div>
-        <h1>Алсын хараа</h1>
-        <h1>Эрхэм зорилго</h1>
+     <section class="thome" id="thome">
+
+  <div class="content">
+      <h3>Өдөр бүр шинэ</h3>
+  </div>
+
+</section>
+
+
+<section class="menu" id="menu">
+
+  <h1 class="heading"> 
+    КОМПАНИЙН ТАНИЛЦУУЛГА 
+  </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="picture/medee1.jpg" alt="">
+          <p>Артизан ХХК нь 2016 онд БНСУ-ын CJ группын охин компани CJ Foodville корпорацитай TOUS les JOURS сүлжээ бэйкерийг Монголд улсад хөгжүүлэх гэрээ байгуулав.</p>         
       </div>
-      <div>
-        <img src="/picture/zorilgo.jfif" alt="Erhem zorilgo" />
-        <p>
-          Бид бэйкери урлалын салбарт дэлхийн жишигт нийцсэн чанар, үйлчилгээг
-          эрхэмлэгч, үнэ цэнийг бүтээгчид байна.
-        </p>
+
+      <div class="box">
+          <img src="picture/medee2.jpg" alt="">
+          <p>TOUS les JOURS /Тү Лэ Жүр/ нь францаар “Өдөр бүр” гэсэн утгатай ба мастер нарийн боовчны гараар урласан Европ бэйкэрийг үйлчлүүлэгчиддээ өглөө бүр шинээр үйлдвэрлэн санал болгодог онцлогтой юм.</p>
       </div>
-      <div>
-        <img src="/picture/alsiinharaa.jpg" alt="Alsiin haraa" />
-        <p>
-          Бид хүлээлтээс давсан бүтээгдэхүүний чанар, найрсаг зочломтгой
-          үйлчилгээгээр таны гэр бүлийн үнэ цэнэтэй хором мөч бүрийг хуваалцана.
-        </p>
+
+      <div class="box">
+          <img src="picture/medee3.jpg" alt="">
+          <p> TOUS les JOURS брэнд нь Америк, Азийн орнуудад 1500 гаруй салбартай Солонгосын хамгийн том хоёр сүлжээ бэйкэрийн нэг ба 20 гаруй жилийн туршлагаар бүтээгдэхүүн хөгжүүлэлт, технологын давуу талыг ашиглан тасралтгүй шинэчлэлт, сайжруулалтыг хийж байна.</p>
       </div>
-      <img src="/picture/niit.png" alt="Niit" />
-      <h2>TOUS LES JOURS БЭЙКЕРИЙН МОНГОЛ ДАХЬ САЛБАРУУД</h2>
-      <a
-        href="https://www.google.com/maps/search/Tous+Les+Jours/@47.9163354,106.9096271,14z/data=!3m1!4b1"
-        >Салбарын байршил</a
-      >
+
+  </div>
+
+</section>
+
+
+
+<section class="about" id="about">
+  <div class="row">
+
+      <div class="image">
+          <img src="picture/alsiinharaa.jpg" alt="">
+      </div>
+
+      <div class="content">
+          <h3>Алсын хараа</h3>
+          <p>Бид бэйкери урлалын салбарт дэлхийн жишигт нийцсэн чанар, үйлчилгээг эрхэмлэгч, үнэ цэнийг бүтээгчид байна. </p>
+      </div>
+  </div>
+  <div class="row">
+
+    <div class="image">
+        <img src="picture/zorilgo.jfif" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Эрхэм зорилго</h3>
+        <p>Бид хүлээлтээс давсан бүтээгдэхүүний чанар, найрсаг зочломтгой үйлчилгээгээр таны гэр бүлийн үнэ цэнэтэй хором мөч бүрийг хуваалцана. </p>
+    </div>
+</div>
+</section>
+
+
+
+
+
     </main>
     <footer class="footer">
       <section>
