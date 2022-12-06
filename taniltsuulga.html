@@ -23,6 +23,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"> </script>
     <title>TousLesJoursMongolia</title>
     <style >
       .heading{
@@ -145,21 +147,27 @@
       </h1>
       <nav class="mid-menu">
         <ul>
-          <li><a href="/buteegdehuun.html">Бүтээгдэхүүн</a></li>
+          <div class="dropbtn">
+            <li><a href="#">Бүтээгдэхүүн</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="/buteegdehuun.html">cake</a></li>
+                  <li><a href="/breads.html">breads</a></li>
+                  <li><a href="/desserts.html">desserts</a></li>
+                  <li><a href="/drinks.html">drinks</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
           <li><a href="/medee.html">Мэдээлэл</a></li>
           <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
         </ul>
       </nav>
       <div class="end-menu">
-        <a href="/feedback.html"
-          ><i class="fa fa-edit" style="color: black"></i
-        ></a>
-        <a href="/sags.html"
-          ><i class="fa fa-shopping-cart" style="color: black"></i
-        ></a>
-        <a href="/signin.html"
-          ><i class="fa fa-user" style="color: black"></i
-        ></a>
+        <a href="/feedback.html"><i class="fa fa-edit" ></i></a>
+        <a href="/sags.html"><i class="fa fa-shopping-cart" ></i></a>
+        <a href="/signin.html"><i class="fa fa-user" ></i></a>
+        <div id="menu-btn"><i class="fa fa-bars"></i></div>
       </div>
     </header>
     <main>
