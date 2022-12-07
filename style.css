@@ -7,10 +7,10 @@
   --foot-color: #2e2f2e;
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   --brand-color: #0d4633;
-  --eng-font: 'Aref Ruqaa';
-  --mongolia-font: 'Mulish', sans-serif !important;
+  --eng-font: "Aref Ruqaa";
+  --mongolia-font: "Mulish", sans-serif !important;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -120,10 +120,10 @@
 
 /*--------main--------*/
 /*-------- main nuur zurag---------*/
-.home{
+.home {
   padding: 0;
 }
-.home .main-picture .description{
+.home .main-picture .description {
   display: flex;
   flex-direction: column;
   height: 80vh;
@@ -131,131 +131,131 @@
   background: url("picture/nuurhuudas2.jpg") no-repeat;
   background-size: cover !important;
   background-position: center !important;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-.home  .description h2{
+.home .description h2 {
   margin-top: 25%;
   font-size: 2.5rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
 }
-.home  .description p{
+.home .description p {
   font-size: 1.5rem;
-  font-family:  'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
 }
-.description .button{
+.description .button {
   margin-top: 1rem;
   width: 120px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.3); 
+  background: rgba(255, 255, 255, 0.3);
   border: 1px solid #000000;
   border-radius: 5px;
 }
-.description .button:hover{
+.description .button:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 /*-------- main nuur zurag end---------*/
 /** bread nuur zurag****/
-.home .breads-home{
+.home .breads-home {
   display: flex;
   flex-direction: column;
   height: 80vh;
   background: url("picture/breads-nuur.jpg") no-repeat;
   background-size: cover !important;
   background-position: center !important;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-.home .breads-home h2{
+.home .breads-home h2 {
   margin-top: 9rem;
   font-size: 2.5rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   color: #fff;
 }
 /**drink nuur zurag***/
-.home .drinks-home{
+.home .drinks-home {
   display: flex;
   flex-direction: column;
   height: 80vh;
   background: url("picture/drinks-wallpaper.jpg") no-repeat;
   background-size: cover !important;
   background-position: center !important;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-.home .drinks-home h2{
+.home .drinks-home h2 {
   margin-top: 9rem;
   font-size: 2.5rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   color: #fff;
 }
 /*** desserts nuur zurag ***/
-.home .dessert-home{
+.home .dessert-home {
   display: flex;
   flex-direction: column;
   height: 80vh;
   background: url("picture/dessertwall.jpg") no-repeat;
   background-size: cover !important;
   background-position: center !important;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-.home .dessert-home h2{
+.home .dessert-home h2 {
   margin-top: 9rem;
   font-size: 2.5rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   color: #fff;
 }
 /*------buteegdehuun cake nuur zurag-------*/
-.home .buteegdehuun-home{
+.home .buteegdehuun-home {
   display: flex;
   flex-direction: column;
   height: 80vh;
   background: url("picture/cake-ph2.jpg") no-repeat;
   background-size: cover !important;
   background-position: center !important;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-.home .buteegdehuun-home h2{
+.home .buteegdehuun-home h2 {
   margin-top: 7rem;
   color: #fff;
   font-size: 2.5rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
 }
-.home .main-products .top-nav{
+.home .main-products .top-nav {
   margin-top: 5%;
   height: 15vh;
-  display:flex;
-  background: linear-gradient(rgba(15, 108, 52, 0) ,rgba(0, 0, 0, 0.5)), url("picture/sectionph.jpg") no-repeat;
+  display: flex;
+  background: linear-gradient(rgba(15, 108, 52, 0), rgba(0, 0, 0, 0.5)),
+    url("picture/sectionph.jpg") no-repeat;
   background-size: cover !important;
   background-position: center !important;
-  justify-content: center;  
+  justify-content: center;
 }
-.home .main-products .top-nav a{
+.home .main-products .top-nav a {
   display: flex;
   padding-top: 2.5rem;
   color: #fff;
   font-size: 1rem;
-  font-family:  'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
 }
-.main-products .top-nav >ul{
+.main-products .top-nav > ul {
   display: flex;
   gap: 2rem;
 }
-.main-products .top-nav a:hover{
+.main-products .top-nav a:hover {
   border-bottom: 2px solid #fff;
 }
-.main-products .prod-name h3{
-  font-family: 'Aref Ruqaa';
+.main-products .prod-name h3 {
+  font-family: "Aref Ruqaa";
   font-size: 2rem;
   display: flex;
-  margin-top:2%;
+  margin-top: 2%;
   color: var(--brand-color);
   justify-content: center;
-
 }
-.main-products .shop-bot{
+.main-products .shop-bot {
   position: fixed;
   right: 3rem;
   bottom: 3rem;
@@ -267,7 +267,7 @@
   cursor: pointer;
   z-index: 99;
 }
-.shop-bot .shop-counter{
+.shop-bot .shop-counter {
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -280,22 +280,25 @@
   background-color: #e4002b;
   border-radius: 50%;
 }
-.main-products .shop-bot i{
+.main-products .shop-bot i {
   display: flex;
   justify-content: center;
-  text-align: center; 
+  text-align: center;
   padding-top: 0.7rem;
   font-size: 1.5rem;
   color: black;
 }
 /**********buteegdehuun cake nuur zurag end-------*/
 
-.products-container .products-nuur:hover{
+.products-container .products-nuur:hover {
   animation: pop 0.3s linear 1;
-} 
-@keyframes pop{
-  50%  {transform: scale(1.2);}
-}.home .sectionph {
+}
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+.home .sectionph {
   display: flex;
   margin-top: 5rem;
   height: 15vh;
@@ -303,83 +306,83 @@
   background-size: cover !important;
   background-position: center !important;
   margin-bottom: 3rem;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
-.home .sectionph h2{  
+.home .sectionph h2 {
   font-size: 2rem;
   padding-top: 2rem;
-  font-family:  'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
   color: #fff;
 }
-.main-products .products-container{
+.main-products .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
   gap: 2rem;
   margin-top: 1.8rem;
   margin-left: 5%;
-  margin-right: 5%; 
+  margin-right: 5%;
   position: relative;
   justify-content: center;
   text-align: center;
-  overflow: hidden; 
+  overflow: hidden;
   bottom: ;
 }
-.main-products .products-nuur img{
+.main-products .products-nuur img {
   width: 30px;
   height: 30px;
 }
 .main-products .products-nuur {
   position: flex;
   margin-top: 4%;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 2px solid rgba(205, 133, 63, 0.4);
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
-.main-products .products-nuur .star-rate{
+.main-products .products-nuur .star-rate {
   display: inline-block;
 }
-.main-products .products-nuur .checked{
+.main-products .products-nuur .checked {
   color: orange;
 }
-.main-products .products-nuur img{
+.main-products .products-nuur img {
   padding-top: 10px;
   text-align: center;
   width: 90%;
   height: 65%;
 }
-.main-products .products-nuur h4{
+.main-products .products-nuur h4 {
   padding-top: 0.5rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   font-size: 1.2rem;
 }
-.main-products .products-nuur h6{
-  font-family: 'Mulish', sans-serif !important;
+.main-products .products-nuur h6 {
+  font-family: "Mulish", sans-serif !important;
   font-size: 0.8rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.6rem;
 }
-.main-products .products-nuur .prod-price{
+.main-products .products-nuur .prod-price {
   display: flex;
   justify-content: center;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   gap: 3rem;
 }
-.main-products .products-nuur .prod-price h5{
+.main-products .products-nuur .prod-price h5 {
   margin-top: 0.5rem;
 }
-.main-products .products-nuur a{
+.main-products .products-nuur a {
   color: #0d4633;
 }
-.main-products .products-nuur .button{
+.main-products .products-nuur .button {
   margin-top: 0.5rem;
   cursor: pointer;
-  font-family: 'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
   font-size: 0.7rem;
   background-color: orange;
   width: 6rem;
@@ -389,23 +392,23 @@
   text-align: center;
   color: #fff;
 }
-.main-products .products-nuur .button:hover{
-  transform: scale(1.2);  
+.main-products .products-nuur .button:hover {
+  transform: scale(1.2);
 }
-.home .drinks-surdchilgaa{
+.home .drinks-surdchilgaa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
 }
-.home .drinks-surdchilgaa img{ 
+.home .drinks-surdchilgaa img {
   margin-top: 2rem;
   width: 100%;
   height: 80%;
   justify-content: center;
 }
-.home .surdchilgaa{
+.home .surdchilgaa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: auto;
@@ -414,73 +417,75 @@
   justify-content: center;
   position: flex;
   text-align: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
-.home .surdchilgaa img{
+.home .surdchilgaa img {
   margin-top: 2rem;
   width: 90%;
   height: 80%;
   box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
 }
-.home .surdchilgaa img:hover{
+.home .surdchilgaa img:hover {
   animation: pop 0.5s linear 1;
 }
-@keyframes pop{
-  50%  {transform: scale(1.1);}
+@keyframes pop {
+  50% {
+    transform: scale(1.1);
+  }
 }
-.home .surdchilgaa h5{
+.home .surdchilgaa h5 {
   padding-top: 1rem;
-  font-family: 'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
   font-size: 1.1rem;
   text-align: center;
   padding-bottom: 2rem;
-  color:#0D4633;
+  color: #0d4633;
 }
 
 /*----------prod delgerengui---------*/
-.home-prod-d{
+.home-prod-d {
   display: flex;
 }
-.products-del{
+.products-del {
   margin-top: 5rem;
   margin-left: 10%;
   margin-right: 5%;
   display: grid;
-  grid-template-columns: repeat( 2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
   gap: 4rem;
 }
-.products-del  img{
+.products-del img {
   width: 70vh;
-  height:70vh;
+  height: 70vh;
 }
-.products-del .describ{
-  font-family: 'Mulish', sans-serif !important;
+.products-del .describ {
+  font-family: "Mulish", sans-serif !important;
   font-size: 1.5rem;
 }
-.products-del .describ h4{
+.products-del .describ h4 {
   margin-top: 8rem;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   font-size: 2.4rem;
-  color:#0D4633;
+  color: #0d4633;
 }
-.products-del .desc-price{
+.products-del .desc-price {
   margin-top: 2%;
-  gap:  3rem;
+  gap: 3rem;
 }
-.products-del h5{
-  font-family: 'Aref Ruqaa';
+.products-del h5 {
+  font-family: "Aref Ruqaa";
 }
-.counter{
+.counter {
   margin-top: 2%;
   width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
- }
- .counter .btn{
+}
+.counter .btn {
   background-color: orange;
   width: 40px;
   height: 2rem;
@@ -488,21 +493,21 @@
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 900;
   color: #202020;
   cursor: pointer;
- }
- .counter .count p{
+}
+.counter .count p {
   font-size: 18px;
-  font-family: 'Aref Ruqaa';
+  font-family: "Aref Ruqaa";
   font-weight: 900;
   color: #202020;
- }
-.products-del .desc-price .button{
+}
+.products-del .desc-price .button {
   margin-top: 2%;
   cursor: pointer;
-  font-family: 'Mulish', sans-serif !important;
+  font-family: "Mulish", sans-serif !important;
   font-size: 1rem;
   background-color: orange;
   width: 12rem;
@@ -513,7 +518,7 @@
   color: #fff;
   font-weight: bold !important;
 }
-.home-prod-d .holbootoi-buteegdehuun h3{
+.home-prod-d .holbootoi-buteegdehuun h3 {
   bottom: 5rem;
   left: 5rem;
   justify-content: bottom;
@@ -521,20 +526,19 @@
 /*-----------footer-------------*/
 
 .footer {
-  margin-top: 3rem;
+  height: 16vh;
   text-decoration: none;
   width: 100%;
   background: var(--foot-color);
   display: grid;
   grid-template-columns: 80% 20%;
   color: var(--primary-color);
-  font-size: 0.8rem;
-  font-family: 'Mulish', sans-serif !important;
+  font-size: 0.7rem;
+  font-family: "Mulish", sans-serif !important;
 }
 .footer section {
   margin-top: 1rem;
   margin-left: 5%;
-  margin-bottom: 1rem;
 }
 
 .footer h3 {
@@ -542,8 +546,7 @@
 }
 
 .footer section address {
-  margin-right: 3%;
-  margin-top: 1rem;
+  margin-left: 3%;
 }
 
 .footer section address a {
@@ -566,51 +569,49 @@
 }
 /*-----------nuur css end-------------*/
 
-
 /*------media query--------*/
-@media(max-width: 991px){
-  html{
+@media (max-width: 991px) {
+  html {
     font-size: 50%;
   }
-  .header-menu{
+  .header-menu {
     padding: 1.3rem 2rem;
   }
-  .home .main-picture{
+  .home .main-picture {
     margin-left: 0;
     width: 100%;
-   }
-   .products-nuur  h4{
+  }
+  .products-nuur h4 {
     font-size: 150%;
-  } 
-  .home .main-products .products-nuur a h4{
+  }
+  .home .main-products .products-nuur a h4 {
     font-size: 2rem;
-  } 
-  .home .main-products .products-nuur a h6{
+  }
+  .home .main-products .products-nuur a h6 {
     font-size: 1.5rem;
   }
   .home .main-products .products-nuur .prod-price {
-   
     font-size: 2rem;
   }
-  .home .main-products .products-nuur .prod-price .button{
+  .home .main-products .products-nuur .prod-price .button {
     width: 80px;
     height: 20px;
     font-size: 1rem;
   }
-  .home-prod-d .products-del .describ{
+  .home-prod-d .products-del .describ {
     margin-top: 10rem;
     font-size: 2.2rem;
   }
-  .home-prod-d .products-del img{
+  .home-prod-d .products-del img {
     width: 50vh;
     height: 50vh;
   }
 }
-@media(max-width: 768px){
-  .end-menu #menu-btn{
+@media (max-width: 768px) {
+  .end-menu #menu-btn {
     display: inline-block;
   }
-  .header-menu .mid-menu{
+  .header-menu .mid-menu {
     position: absolute;
     top: 70%;
     right: -100%;
@@ -618,71 +619,70 @@
     background-color: #f9f4e9;
     height: 80vh;
   }
-  .header-menu .mid-menu.nav-toggle{
+  .header-menu .mid-menu.nav-toggle {
     right: 0;
   }
-  .header-menu .mid-menu >ul{
+  .header-menu .mid-menu > ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     float: left;
   }
-   .header-menu .mid-menu a{
+  .header-menu .mid-menu a {
     display: block;
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-left: 2rem;
     color: var(--secondary-color);
-   }
-   .home .main-picture{
+  }
+  .home .main-picture {
     margin-left: 0;
     width: 100%;
-   }
-   .home-prod-d .products-del img{
+  }
+  .home-prod-d .products-del img {
     width: 100%;
     height: 100%;
   }
-  .home-prod-d .counter{
+  .home-prod-d .counter {
     width: 30%;
   }
 }
-@media(max-width:600px){
-  html{
+@media (max-width: 600px) {
+  html {
     font-size: 50%;
   }
-  .home-prod-d .products-del .describ{
+  .home-prod-d .products-del .describ {
     display: grid;
     margin-top: 5px;
     font-size: 2.2rem;
   }
-  .home-prod-d .products-del img{
+  .home-prod-d .products-del img {
     width: 100%;
     height: 100%;
   }
-
 }
-@media(max-width:480px){
-  .home .main-products .products-nuur h4{
+@media (max-width: 480px) {
+  .home .main-products .products-nuur h4 {
     font-size: 100%;
   }
-  .header-menu .logo a{
+  .header-menu .logo a {
     text-align: center;
-    font-size:1.7rem;
+    font-size: 1.7rem;
   }
-  .products-del .describ h4{
+  .products-del .describ h4 {
     margin: 0;
   }
-  .home-prod-d .products-del{
+  .home-prod-d .products-del {
     margin-top: 20%;
   }
-  .home-prod-d .describ h4{
+  .home-prod-d .describ h4 {
     font-size: 3rem;
   }
-  .home-prod-d .counter{
+  .home-prod-d .counter {
     width: 50%;
     display: flex;
   }
-  .home-prod-d a{
+  .home-prod-d a {
     display: flex;
   }
 }
