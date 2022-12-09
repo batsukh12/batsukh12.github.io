@@ -33,3 +33,9 @@ function shopping(){
     document.getElementById('shop-count').innerHTML=count;
     return count;
 }
+/* buteegdehuun sagsand nemeh*/ 
+(function() {
+    const
+})();
+
+
