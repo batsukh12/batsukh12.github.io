@@ -34,8 +34,5 @@ function shopping(){
     return count;
 }
 /* buteegdehuun sagsand nemeh*/ 
-(function() {
-    const
-})();
 
 
