@@ -327,7 +327,6 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  bottom: ;
 }
 .main-products .products-nuur img {
   width: 30px;
@@ -536,16 +535,20 @@
   font-size: 0.7rem;
   font-family: "Mulish", sans-serif !important;
 }
-.footer section {
-  margin-top: 1rem;
+.footer section div {
+  width: 100%;
   margin-left: 5%;
+}
+.footer section {
+  display: flex;
+  align-items: center;
 }
 
 .footer h3 {
   margin-bottom: 1%;
 }
 
-.footer section address {
+.footer section div address {
   margin-left: 3%;
 }
 
@@ -572,7 +575,7 @@
 /*------media query--------*/
 @media (max-width: 991px) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
   .header-menu {
     padding: 1.3rem 2rem;
@@ -649,7 +652,7 @@
 }
 @media (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
   .home-prod-d .products-del .describ {
     display: grid;
@@ -661,9 +664,9 @@
     height: 100%;
   }
 }
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .home .main-products .products-nuur h4 {
-    font-size: 100%;
+    font-size: 70%;
   }
   .header-menu .logo a {
     text-align: center;
@@ -685,4 +688,4 @@
   .home-prod-d a {
     display: flex;
   }
-}
+} */

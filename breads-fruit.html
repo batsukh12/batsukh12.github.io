@@ -1,173 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="TousLesJoursMongolia" />
     <link rel="canonical" href="https://example.com" />
-    <link href="https://fonts.googleapis.com/css?family=Aref Ruqaa" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aref Ruqaa"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mulish"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="script.js"> </script>
+    <script src="script.js"></script>
     <title>TousLesJoursMongolia</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header-menu">
-        <h1 class="logo">
-            <a href="/index.html">Tous les Jours</a>
-        </h1>
-        <nav class="mid-menu">
-            <ul>
-                <div class="dropbtn">
-                    <li><a href="#">Бүтээгдэхүүн</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a href="/buteegdehuun.html">cake</a></li>
-                                <li><a href="/breads.html">breads</a></li>
-                                <li><a href="/desserts.html">desserts</a></li>
-                                <li><a href="/drinks.html">drinks</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </div>
-                <li><a href="/medee.html">Мэдээлэл</a></li>
-                <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
-            </ul>
-        </nav>
-        <div class="end-menu">
-            <a href="/feedback.html"><i class="fa fa-edit"></i></a>
-            <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
-            <a href="/signin.html"><i class="fa fa-user"></i></a>
-            <div id="menu-btn"><i class="fa fa-bars"></i></div>
-        </div>
+      <h1 class="logo">
+        <a href="/index.html">Tous les Jours</a>
+      </h1>
+      <nav class="mid-menu">
+        <ul>
+          <div class="dropbtn">
+            <li>
+              <a href="#">Бүтээгдэхүүн</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="/buteegdehuun.html">cake</a></li>
+                  <li><a href="/breads.html">breads</a></li>
+                  <li><a href="/desserts.html">desserts</a></li>
+                  <li><a href="/drinks.html">drinks</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
+          <li><a href="/medee.html">Мэдээлэл</a></li>
+          <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
+        </ul>
+      </nav>
+      <div class="end-menu">
+        <a href="/feedback.html"><i class="fa fa-edit"></i></a>
+        <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
+        <a href="/signin.html"><i class="fa fa-user"></i></a>
+        <div id="menu-btn"><i class="fa fa-bars"></i></div>
+      </div>
     </header>
     <main class="home">
-        <div class="breads-home">
-            <h2>Freshly Baked Everyday</h2>
+      <div class="breads-home">
+        <h2>Freshly Baked Everyday</h2>
+      </div>
+      <section class="main-products">
+        <nav class="top-nav">
+          <ul>
+            <li><a href="/breads.html"> махан төрөл </a></li>
+            <li><a href="#">жимс & кремтэй </a></li>
+            <li><a href="#">донутс </a></li>
+          </ul>
+        </nav>
+        <div class="shop-bot">
+          <div class="shop-counter" id="shop-count">0</div>
+          <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
         </div>
-        <section class="main-products">
-            <nav class="top-nav">
-                <ul>
-                    <li><a href="/breads.html"> махан төрөл </a></li>
-                    <li><a href="#">жимс & кремтэй </a></li>
-                    <li><a href="#">донутс </a></li>
-                </ul>
-            </nav>
-            <div class="shop-bot">
-                <div class="shop-counter" id="shop-count">0</div>
-                <a href="/sags.html"><i class="fa fa-shopping-cart" ></i></a>
-              </div>
-            <div class="products-container">
-                <div class="products-nuur">
-                    <a href="/prod-delgerengui.html">
-                        <img src="picture/mini-ice-br.jpg" alt="tomate pie" />
-                        <h4> Mini ice croissant
-                        </h4>
-                        <h6>Амтат кремэн хавчуургатай мини кроссант
-                        </h6>
-                    </a>
-                    <div class="prod-price">
-                        <h5>3,700₮ </h5>
-                        <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-                    </div>
-                </div>
-                <div class="products-nuur">
-                    <a href="/prod-delgerengui.html">
-                        <img src="picture/milk-cream-cornet.jpg" alt="mini corn pastry" />
-                        <h4>Milk cream cornet
-                        </h4>
-                        <h6>Сүүн кремтэй корнет
-                        </h6><br>
-                    </a>
-                    <div class="prod-price">
-                        <h5>3,700₮</h5>
-                        <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-                    </div>
-                </div>
-                <div class="products-nuur">
-                    <a href="/prod-delgerengui.html">
-                        <img src="picture/mushroom-traingle.jpg" alt="chicken potato pastry" />
-                        <h4> Mushroom traingle
-                        </h4>
-                        <h6>Мөөг, крем чийз, балзамик соусаар амталсан пэстри
-                        </h6>
-                    </a>
-                    <div class="prod-price">
-                        <h5>5,700₮</h5>
-                        <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-                    </div>
-                </div>
-                <div class="products-nuur">
-                    <a href="/prod-delgerengui.html">
-                        <img src="picture/creamcheese-br.jpg" alt="mangocloudcake" />
-                        <h4>Cream cheese walnut bread
-
-                        </h4>
-                        <h6>Зүссэн алмонд самраар чимэглэсэн крем чийзээр шанзалсан амтат талх
-                        </h6>
-                    </a>
-                    <div class="prod-price">
-                        <h5>4,200₮</h5>
-                        <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-                    </div>
-                </div>
-                <div class="products-nuur">
-                    <a href="/prod-delgerengui.html">
-                        <img src="picture/StrawberryBread.jpg" alt="pizza baguette" />
-                        <h4>Strawberry Bread
-
-                        </h4>
-                        <h6>Товч тайлбар: Гүзээлзгэний амттай сүүн кремтэй талх.
-
-                        </h6>
-                    </a>
-                    <div class="prod-price">
-                        <h5>4,300₮</h5>
-                        <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-                    </div>
-                </div>
-                <div class="products-nuur">
-                    <a href="/prod-delgerengui.html">
-                        <img src="picture/mangobread.jpg" alt="hawai baguette" />
-                        <h4>Mango Bread
-
-
-                        </h4>
-                        <h6>Товч тайлбар: Сүүн кремтэй, манготой талх.
-
-                        </h6>
-                    </a>
-                    <div class="prod-price">
-                        <h5>4,300₮</h5>
-                        <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-                    </div>
-                </div>
+        <div class="products-container">
+          <div class="products-nuur">
+            <a href="/prod-delgerengui.html">
+              <img src="picture/mini-ice-br.jpg" alt="tomate pie" />
+              <h4>Mini ice croissant</h4>
+              <h6>Амтат кремэн хавчуургатай мини кроссант</h6>
+            </a>
+            <div class="prod-price">
+              <h5>3,700₮</h5>
+              <a href="/sags.html"
+                ><input type="button" class="button" value="сагслах"
+              /></a>
             </div>
-        </section>
+          </div>
+          <div class="products-nuur">
+            <a href="/prod-delgerengui.html">
+              <img src="picture/milk-cream-cornet.jpg" alt="mini corn pastry" />
+              <h4>Milk cream cornet</h4>
+              <h6>Сүүн кремтэй корнет</h6>
+              <br />
+            </a>
+            <div class="prod-price">
+              <h5>3,700₮</h5>
+              <a href="/sags.html"
+                ><input type="button" class="button" value="сагслах"
+              /></a>
+            </div>
+          </div>
+          <div class="products-nuur">
+            <a href="/prod-delgerengui.html">
+              <img
+                src="picture/mushroom-traingle.jpg"
+                alt="chicken potato pastry"
+              />
+              <h4>Mushroom traingle</h4>
+              <h6>Мөөг, крем чийз, балзамик соусаар амталсан пэстри</h6>
+            </a>
+            <div class="prod-price">
+              <h5>5,700₮</h5>
+              <a href="/sags.html"
+                ><input type="button" class="button" value="сагслах"
+              /></a>
+            </div>
+          </div>
+          <div class="products-nuur">
+            <a href="/prod-delgerengui.html">
+              <img src="picture/creamcheese-br.jpg" alt="mangocloudcake" />
+              <h4>Cream cheese walnut bread</h4>
+              <h6>
+                Зүссэн алмонд самраар чимэглэсэн крем чийзээр шанзалсан амтат
+                талх
+              </h6>
+            </a>
+            <div class="prod-price">
+              <h5>4,200₮</h5>
+              <a href="/sags.html"
+                ><input type="button" class="button" value="сагслах"
+              /></a>
+            </div>
+          </div>
+          <div class="products-nuur">
+            <a href="/prod-delgerengui.html">
+              <img src="picture/StrawberryBread.jpg" alt="pizza baguette" />
+              <h4>Strawberry Bread</h4>
+              <h6>Товч тайлбар: Гүзээлзгэний амттай сүүн кремтэй талх.</h6>
+            </a>
+            <div class="prod-price">
+              <h5>4,300₮</h5>
+              <a href="/sags.html"
+                ><input type="button" class="button" value="сагслах"
+              /></a>
+            </div>
+          </div>
+          <div class="products-nuur">
+            <a href="/prod-delgerengui.html">
+              <img src="picture/mangobread.jpg" alt="hawai baguette" />
+              <h4>Mango Bread</h4>
+              <h6>Товч тайлбар: Сүүн кремтэй, манготой талх.</h6>
+            </a>
+            <div class="prod-price">
+              <h5>4,300₮</h5>
+              <a href="/sags.html"
+                ><input type="button" class="button" value="сагслах"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <section>
-            <h3>Бидэнтэй холбогдох :</h3>
-            <address>
-                <i class="fa fa-globe" style="color: white"></i>
-                Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж, Хүннү
-                2222 хороолол
-                <br />
-                <i class="fa fa-envelope" style="color: white"></i><a
-                    href="mailto:ankhaaa205@gmail.com">info@tlj.mn</a><br />
-                <i class="fa fa-phone" style="color: white"></i><a href="tel:99887766">(976) 7575-1010</a><br />
-            </address>
-        </section>
-        <div class="social">
-            <a href="https://www.facebook.com/TousLesJoursMongolia"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/touslesjoursmn/"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/tljmn?lang=en"><i class="fa fa-twitter"></i></a>
+      <section>
+        <div>
+          <h3>Бидэнтэй холбогдох :</h3>
+          <address>
+            <i class="fa fa-globe" style="color: white"></i>
+            Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж,
+            Хүннү 2222 хороолол
+            <br />
+            <i class="fa fa-envelope" style="color: white"></i
+            ><a href="mailto:ankhaaa205@gmail.com">info@tlj.mn</a><br />
+            <i class="fa fa-phone" style="color: white"></i
+            ><a href="tel:99887766">(976) 7575-1010</a><br />
+          </address>
         </div>
+      </section>
+      <div class="social">
+        <a href="https://www.facebook.com/TousLesJoursMongolia"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/touslesjoursmn/"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/tljmn?lang=en"
+          ><i class="fa fa-twitter"></i
+        ></a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
