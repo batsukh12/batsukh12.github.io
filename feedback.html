@@ -34,9 +34,10 @@
         height: 84vh;
       }
       .feedback1 {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
         width: 40%;
         background-color: #fff;
-        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,12 +55,24 @@
         border: solid #000 1px;
         border-radius: 0.3rem;
       }
+      .email{
+        width: 100%;
+        height: 5%;
+        margin-top: 5%;
+        padding: 0.8rem;
+        border: solid #000 1px;
+        border-radius: 0.3rem;
+      }
       .send {
         width: 100%;
         margin-top: 5%;
         padding: 0.5rem;
         border-radius: 0.3rem;
         background-color: #f9f4e9;
+        cursor: pointer;
+      }
+      .send:hover{
+        border: 1px solid #0d4633;
       }
       @media (max-width: 900px) {
         .feedback1 {
@@ -110,6 +123,9 @@
         <div class="feedback1">
           <div class="feedback2">
             <h2>Санал хүсэлт</h2>
+            <form action="/action_page.php">
+              <input type="email" placeholder="энд email ээ оруулна уу." class="email">
+            </form>
             <textarea
               id="feedback"
               name="feedback"
@@ -117,7 +133,7 @@
               cols="50"
               placeholder="Энд бичнэ үү..."
             ></textarea>
-            <button class="send">Илгээх</button>
+            <button type="button" class="send" onclick="emailsend()">Илгээх</button>
           </div>
         </div>
       </div>

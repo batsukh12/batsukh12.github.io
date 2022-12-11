@@ -22,7 +22,7 @@ function minus(){
         document.getElementById('count').innerHTML= click;
     }
 }
-
+/** ongo ogno */
 function listChange(){
     document.getElementById('lists').style.cssText = 'border-bottom: 2px solid #fff';
 }
@@ -32,6 +32,10 @@ function shopping(){
     count++;
     document.getElementById('shop-count').innerHTML=count;
     return count;
+}
+/*  email huleeej awah  */
+function emailsend(){
+    alert('таны хүсэлтийг хүлээн авлаа.');
 }
 /* buteegdehuun sagsand nemeh*/ 
 
