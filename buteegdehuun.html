@@ -1,253 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TousLesJoursMongolia" />
-    <link rel="canonical" href="https://example.com" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Aref Ruqaa"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Mulish"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <title>TousLesJoursMongolia</title>
-  </head>
-  <body>
-    <header class="header-menu">
-      <h1 class="logo">
-        <a href="/index.html">Tous les Jours</a>
-      </h1>
-      <nav class="mid-menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TousLesJoursMongolia" />
+  <link rel="canonical" href="https://example.com" />
+  <link href="https://fonts.googleapis.com/css?family=Aref Ruqaa" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/fb1fcdd475.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <title>TousLesJoursMongolia</title>
+</head>
+<body>
+  <header class="header-menu">
+    <h1 class="logo">
+      <a href="/index.html">Tous les Jours</a>
+    </h1>
+    <nav class="mid-menu">
+      <ul>
+        <div class="dropbtn">
+          <li>
+            <a href="#">Бүтээгдэхүүн</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="/buteegdehuun.html">cake</a></li>
+                <li><a href="/breads.html">breads</a></li>
+                <li><a href="/desserts.html">desserts</a></li>
+                <li><a href="/drinks.html">drinks</a></li>
+              </ul>
+            </div>
+          </li>
+        </div>
+        <li><a href="/medee.html">Мэдээлэл</a></li>
+        <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
+      </ul>
+    </nav>
+    <div class="end-menu">
+      <a href="/feedback.html"><i class="fa fa-edit"></i></a>
+      <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
+      <a href="/signin.html"><i class="fa fa-user"></i></a>
+      <div id="menu-btn"><i class="fa fa-bars"></i></div>
+    </div>
+  </header>
+  <main class="home">
+    <div class="buteegdehuun-home">
+      <h2>Delicious & Sweet</h2>
+    </div>
+    <section class="main-products">
+      <nav class="top-nav">
         <ul>
-          <div class="dropbtn">
-            <li>
-              <a href="#">Бүтээгдэхүүн</a>
-              <div class="dropdown-menu">
-                <ul>
-                  <li><a href="/buteegdehuun.html">cake</a></li>
-                  <li><a href="/breads.html">breads</a></li>
-                  <li><a href="/desserts.html">desserts</a></li>
-                  <li><a href="/drinks.html">drinks</a></li>
-                </ul>
-              </div>
-            </li>
-          </div>
-          <li><a href="/medee.html">Мэдээлэл</a></li>
-          <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
+          <li>
+            <a href="#" onclick="listChange()" id="lists"> сүүн кремтэй </a>
+          </li>
+          <li>
+            <a href="/cake-chocolate.html" onclick="listChange()" id="lists">шоколодтай
+            </a>
+          </li>
+          <li><a href="#" onclick="listChange()" id="lists">special </a></li>
+          <li><a href="#" onclick="listChange()" id="lists">хүүхдийн </a></li>
         </ul>
       </nav>
-      <div class="end-menu">
-        <a href="/feedback.html"><i class="fa fa-edit"></i></a>
+      <div class="prod-name">
+        <h3>Milk cake :</h3>
+      </div>
+      <div class="shop-bot">
+        <div class="shop-counter" id="shop-count">0</div>
         <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
-        <a href="/signin.html"><i class="fa fa-user"></i></a>
-        <div id="menu-btn"><i class="fa fa-bars"></i></div>
       </div>
-    </header>
-    <main class="home">
-      <div class="buteegdehuun-home">
-        <h2>Delicious & Sweet</h2>
+      <div class="products-container" id="target-json">
+        <script type="module">
+          import cakepage from "/modules/cakepage.js";
+        </script>
+        <!--json huleen awna-->
       </div>
-      <section class="main-products">
-        <nav class="top-nav">
-          <ul>
-            <li>
-              <a href="#" onclick="listChange()" id="lists"> сүүн кремтэй </a>
-            </li>
-            <li>
-              <a href="/cake-chocolate.html" onclick="listChange()" id="lists"
-                >шоколодтай
-              </a>
-            </li>
-            <li><a href="#" onclick="listChange()" id="lists">special </a></li>
-            <li><a href="#" onclick="listChange()" id="lists">хүүхдийн </a></li>
-          </ul>
-        </nav>
-        <div class="prod-name">
-          <h3>Milk cake :</h3>
-        </div>
-        <div class="shop-bot">
-          <div class="shop-counter" id="shop-count">0</div>
-          <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
-        </div>
-        <div class="products-container">
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/freshpearlcake.jpg" alt="pearl_cake" />
-              <h4>Fresh pearl Cake</h4>
-              <h6>
-                Цэвэр сүүн кремтэй хөвсгөр зөөлөн цагаан кекстэй жимсний коктейл
-                хавчуургатай гүзээлзгэнэ нэрсээр чимэглэсэн амтат бялуу
-                Хэмжээ-21см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>55,900₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/strawberrycake.jpg" alt="strawberry_cake" />
-              <h4>Fresh strawberry mix cake</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/nomurocake.jpg" alt="nomura_cake" />
-              <h4>Fresh nomura cake</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/mangocloudcake.jpg" alt="mangocloudcake" />
-              <h4>Mango cloud cakee</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/yogurtcake.jpg" alt="yogurt_cake" />
-              <h4>Blueberry yogurt cream cake</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/fruitcreamcake.jpg" alt="fruitcreamcake" />
-              <h4>Fruit fresh cream cake</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.htmll">
-              <img
-                src="picture/blueberrychiffoncake.jpg"
-                alt="blueberrychiffoncake"
-              />
-              <h4>Blueberry chiffon No.3</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-          <div class="products-nuur">
-            <a href="/prod-delgerengui.html">
-              <img src="picture/rollroundcake.jpg" alt="rollroundcake" />
-              <h4>Strawberry roll round cake</h4>
-              <h6>
-                Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс
-                жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см
-              </h6>
-            </a>
-            <div class="prod-price">
-              <h5>45,000₮</h5>
-              <button type="button" class="button" onclick="shopping()">
-                сагслах
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <
-    <footer class="footer">
-      <section>
-        <div>
-          <h3>Бидэнтэй холбогдох :</h3>
-          <address>
-            <i class="fa fa-globe" style="color: white"></i>
-            Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж,
-            Хүннү 2222 хороолол
-            <br />
-            <i class="fa fa-envelope" style="color: white"></i
-            ><a href="mailto:ankhaaa205@gmail.com">info@tlj.mn</a><br />
-            <i class="fa fa-phone" style="color: white"></i
-            ><a href="tel:99887766">(976) 7575-1010</a><br />
-          </address>
-        </div>
-      </section>
-      <div class="social">
-        <a href="https://www.facebook.com/TousLesJoursMongolia"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/touslesjoursmn/"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a href="https://twitter.com/tljmn?lang=en"
-          ><i class="fa fa-twitter"></i
-        ></a>
+    </section>
+  </main>
+  <footer class="footer">
+    <section>
+      <div>
+        <h3>Бидэнтэй холбогдох :</h3>
+        <address>
+          <i class="fa fa-globe" style="color: white"></i>
+          Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж,
+          Хүннү 2222 хороолол
+          <br />
+          <i class="fa fa-envelope" style="color: white"></i><a href="mailto:ankhaaa205@gmail.com">info@tlj.mn</a><br />
+          <i class="fa fa-phone" style="color: white"></i><a href="tel:99887766">(976) 7575-1010</a><br />
+        </address>
       </div>
-    </footer>
-  </body>
+    </section>
+    <div class="social">
+      <a href="https://www.facebook.com/TousLesJoursMongolia"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/touslesjoursmn/"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com/tljmn?lang=en"><i class="fa fa-twitter"></i></a>
+    </div>
+  </footer>
+</body>
 </html>

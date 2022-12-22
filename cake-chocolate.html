@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +14,95 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="script.js"> </script>
   <title>TousLesJoursMongolia</title>
+  <script>
+    class cake_choko {
+      constructor(img, title, describ, price, button) {
+        this.img = img,
+          this.title = title,
+          this.describ = describ,
+          this.price = price,
+          this.button = button
+      }
+      render() {
+        return `
+          <article>
+            <div class="products-nuur" >
+              <a href="/prod-delgerengui.html">
+                <img src="${this.img}" alt="pearl_cake" />
+                <h4>${this.title}</h4>
+                <h6>
+                 ${this.describ}
+                </h6>
+              </a>
+              <div class="prod-price">
+                <h5>${this.price}</h5>
+                <button type="button" class="button" onclick="${this.button}">
+                  сагслах
+                </button>
+             </div>
+            </div>
+          </article>
+          `
+      }
+    }
+    function App(articles, targetElement) {
+      let retVal = "";
+      for (const article of articles) {
+        let articleObj = new cake_choko(
+          article.img,
+          article.title,
+          article.describ,
+          article.price,
+          article.button
+        );
+        retVal += articleObj.render();
+      }
+      document
+        .getElementById(targetElement)
+        .insertAdjacentHTML("beforeend", retVal);
+    }
+    const cake_chokoData = {
+      articles: [
+        {
+          img: "/picture/gateau-cake.jpg",
+          title: "Gateau",
+          describ: "Шоколадтай кекс болон цэвэр маслон кремтэй шоколадны хавчуургатай, шоколадан жигнэмэгэн        бялуу        Хэмжээ-18см ",
+          price: "49,900₮",
+          button: "shopping()",
+        },
+        {
+          img: "/picture/sweermilk-cake.jpg",
+          title: "Sweet Milk Choco Cake ",
+          describ: "Зөөлөн чийглэг шоколадтай кекс болон цэвэр маслон крем бүхийсүүтэй шоколадаар чимэглэсэн амтат бялуу     Хэмжээ-27см",
+          price: "61,900₮",
+          button: "shopping()",
+        },
+        {
+          img: "/picture/choco-family.jpg",
+          title: "Choco family cake",
+          describ: "  Шоколадтай маслон крем, зөөлөн цэвэр шоколадаар бүрсэн бялуу",
+          price: "57,900₮",
+          button: "shopping()",
+        },
+        {
+          img: "/picture/twinkle-cake.jpg",
+          title: "Twinkle Choco Star Cake",
+          describ: "  Шоколадтай кекс болон шоколадтай маслон кремтэй бялуу",
+          price: "44,900₮",
+          button: "shopping()",
+        },
+        {
+          img: "/picture/mocha-cake.jpg",
+          title: "Mocha Mild Cake",
+          describ: "Кофены амт шингэсэн крем бүхий, цэвэр шоколадаар бүрж чимэглэсэн маслон кремтэй бялуу",
+          price: "49,900₮",
+          button: "shopping()",
+        },
+      ],
+    };
+    window.onload = () => App(cake_chokoData.articles, "target");
+  </script>
+
 </head>
 
 <body>
@@ -67,75 +155,9 @@
         <div class="shop-counter">0</div>
         <a href="/sags.html"><i class="fa fa-shopping-cart"></i></a>
       </div>
-      <div class="products-container">
-        <div class="products-nuur">
-          <a href="/prod-delgerengui.html">
-            <img src="picture/gateau-cake.jpg" alt="pearl_cake" />
-            <h4> Gateau
-            </h4>
-            <h6>Шоколадтай кекс болон цэвэр маслон кремтэй шоколадны хавчуургатай, шоколадан жигнэмэгэн 
-               бялуу
-              Хэмжээ-18см
-            </h6>
-          </a>
-          <div class="prod-price">
-            <h5>49,900₮ </h5>
-            <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-          </div>
-        </div>
-        <div class="products-nuur">
-          <a href="/prod-delgerengui.html">
-            <img src="picture/choco-family.jpg" alt="strawberry_cake" />
-            <h4> Choco family cake
-            </h4>
-            <h6>Шоколадтай маслон крем, зөөлөн цэвэр шоколадаар бүрсэн бялуу
-            </h6><br>
-          </a>
-          <div class="prod-price">
-            <h5>57,900₮
-            </h5>
-            <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-          </div>
-        </div>
-        <div class="products-nuur">
-          <a href="/prod-delgerengui.html">
-            <img src="picture/sweermilk-cake.jpg" alt="nomura_cake" />
-            <h4> Sweet Milk Choco Cake
-            </h4>
-            <h6>Зөөлөн чийглэг шоколадтай кекс болон цэвэр маслон крем бүхийсүүтэй шоколадаар чимэглэсэн амтат бялуу
-              Хэмжээ-27см</h6>
-          </a>
-          <div class="prod-price">
-            <h5>61,900₮</h5>
-            <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-          </div>
-        </div>
-        <div class="products-nuur">
-          <a href="/prod-delgerengui.html">
-            <img src="picture/twinkle-cake.jpg" alt="mangocloudcake" />
-            <h4> Twinkle Choco Star Cake
-            </h4>
-            <h6>Шоколадтай кекс болон шоколадтай маслон кремтэй бялуу
-            </h6><br>
-          </a>
-          <div class="prod-price">
-            <h5>44,900₮</h5>
-            <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-          </div>
-        </div>
-        <div class="products-nuur">
-          <a href="/prod-delgerengui.html">
-            <img src="picture/mocha-cake.jpg" alt="yogurt_cake" />
-            <h4>Mocha Mild Cake
-            </h4>
-            <h6>Кофены амт шингэсэн крем бүхий, цэвэр шоколадаар бүрж чимэглэсэн маслон кремтэй бялуу
-            </h6>
-          </a>
-          <div class="prod-price">
-            <h5>49,900₮</h5>
-            <a href="/sags.html"><input type="button" class="button" value="сагслах"></a>
-          </div>
-        </div>
+      <div class="products-container" id="target">
+        
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -167,5 +189,4 @@
     </div>
   </footer>
 </body>
-
 </html>
