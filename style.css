@@ -527,7 +527,6 @@
 /*-----------footer-------------*/
 
 .footer {
-  margin-top: 2%;
   height: 16vh;
   text-decoration: none;
   width: 100%;
@@ -667,7 +666,7 @@
     height: 100%;
   }
 }
- @media (max-width: 480px) {
+@media (max-width: 480px) {
   .home .main-products .products-nuur h4 {
     font-size: 100%;
   }
@@ -691,4 +690,4 @@
   .home-prod-d a {
     display: flex;
   }
-} 
+}
