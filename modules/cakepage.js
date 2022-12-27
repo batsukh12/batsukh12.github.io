@@ -1,87 +1,92 @@
-class cakeItems{
-    constructor(cake){
-        this.img = cake.img,
-        this.title = cake.title,
-        this.describ = cake.describ,
-        this.price = cake.price,
-        this.button = cake.button
-    }
-    render(){
-        return `
+class cakeItems {
+  constructor(cake) {
+    (this.id = cake.id),
+      (this.category = cake.category),
+      (this.name = cake.name),
+      (this.image = cake.image),
+      (this.description = cake.description),
+      (this.price = cake.price),
+      (this.button = cake.shopping),
+      (this.count = cake.count);
+  }
+  parser() {
+    console.log(this.id);
+  }
+  render() {
+    return `
           <article>
             <div class="products-nuur" >
               <a href="/prod-delgerengui.html">
-                <img src="${this.img}" alt="pearl_cake" />
-                <h4>${this.title}</h4>
+                <img src="${this.image}" alt="pearl_cake" />
+                <h4>${this.name}</h4>
                 <h6>
-                 ${this.describ}
+                 ${this.description}
                 </h6>
               </a>
               <div class="prod-price">
                 <h5>${this.price}</h5>
-                <button type="button" class="button" onclick="${this.button}">
+                <div class="button" onclick="${this.button}">
                   сагслах
-                </button>
+                </div>
              </div>
             </div>
           </article>
-          `
-    }
+          `;
+  }
 }
-export default class cakepage{
-    constructor(cakepageUrl) {
-        this.cakelist = [];
-        this.cakepageUrl = cakepageUrl;
-        this.haschanged = false;
-    }
-    // Upload() { 
-    //     if (this.hasChanged) { 
-    //         fetch(this.cakepageUrl,
-    //             {
-    //                 method: 'GET',
-    //                 headers: {
-    //                 'Content-Type': 'application/json;charset=utf-8',
-    //                 'versioning' : false
-    //             },
-    //             body: JSON.stringify(this.cakelist)
-    //         })
-    //             .then(response => { console.log(response.status); })
-    //             .catch(err => { console.log(err) });
 
-    //         this.hasChanged = false;
-    //     }
-    // }
+const params = new URLSearchParams(window.location.search);
+export default class cakepage {
+  constructor(cakepageUrl) {
+    this.cakepageUrl = cakepageUrl;
+  }
 
-    //download then filter() then map() then reduce() 
-     Download(targetElement) {
-         fetch(`${this.cakepageUrl}/latest`)
-         .then(res=>{
-             res.json().then(jsob=>{
-                 const filterCake  = jsob.record.filter(filter => filter.button="shopping");
-                 gebi(targetElement).insertAdjacentHTML("beforeend", filterCake.map(map => {
-                     const _map = new cakeItems(map);
-                     return _map.render();
-                 })
-                 .reduce((prevVal, curVal) => prevVal + curVal, "")
-                 );
-             })
-         })
-         .catch(err => { console.log(err) });
-     } 
-     //Download(targetElement) {
-     //    fetch(`${this.cakepageUrl}`)
-     //    .then(res =>res.json())
-     //    .then(json =>{ 
-     //        json.map(newCakes =>{
-     //            const _newCakes = new cakeItems(newCakes);
-     //            this.cakelist.push(_newCakes);
-     //            return _newCakes.render();
-     //        })
-     //     })
-     //    .catch(err => { console.log(err) });
-     //} 
+  //download then filter() then map() then reduce()
+  Download(targetElement) {
+    console.log(this.cakepageUrl);
+    fetch(`${this.cakepageUrl}`)
+      .then((res) => {
+        res.json().then((jsob) => {
+          if (!params.get("category") || params.get("ungu")) {
+            var filterCake = jsob.record.filter(
+              (cakeItems) => cakeItems.category == "cake"
+            );
+          } else if (params.get("category") == "cake") {
+            var filterCake = jsob.record.filter(
+              (cakeItems) => cakeItems.category == "cake"
+            );
+          } else if (params.get("category") == "drinks") {
+            var filterCake = jsob.record.filter(
+              (cakeItems) => cakeItems.category == "drinks"
+            );
+          } else if (params.get("category") == "desserts") {
+            var filterCake = jsob.record.filter(
+              (cakeItems) => cakeItems.category == "desserts"
+            );
+          } else if (params.get("category") == "breads") {
+            var filterCake = jsob.record.filter(
+              (cakeItems) => cakeItems.category == "breads"
+            );
+          }
+          gebi(targetElement).insertAdjacentHTML(
+            "beforeend",
+            filterCake
+              .map((element) => {
+                const _map = new cakeItems(element);
+                return _map.render();
+              })
+
+              .reduce((prevVal, curVal) => prevVal + curVal, "")
+          );
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 }
-const gebi = id => document.getElementById(id);
-const cakepg = new cakepage("https://api.jsonbin.io/v3/b/6399d05bdfc68e59d567f9ae");
+const gebi = (id) => document.getElementById(id);
+const cakepg = new cakepage(
+  "https://api.jsonbin.io/v3/b/63a15b1f15ab31599e20bcb8"
+);
 cakepg.Download("target-json");
-setInterval(() => cakepg.Download("target-json"), 60000);

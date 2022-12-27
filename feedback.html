@@ -55,7 +55,7 @@
         border: solid #000 1px;
         border-radius: 0.3rem;
       }
-      .email{
+      .email {
         width: 100%;
         height: 5%;
         margin-top: 5%;
@@ -71,7 +71,7 @@
         background-color: #f9f4e9;
         cursor: pointer;
       }
-      .send:hover{
+      .send:hover {
         border: 1px solid #0d4633;
       }
       @media (max-width: 900px) {
@@ -99,10 +99,16 @@
               <a href="#">Бүтээгдэхүүн</a>
               <div class="dropdown-menu">
                 <ul>
-                  <li><a href="/buteegdehuun.html">cake</a></li>
-                  <li><a href="/breads.html">breads</a></li>
-                  <li><a href="/desserts.html">desserts</a></li>
-                  <li><a href="/drinks.html">drinks</a></li>
+                  <li><a href="/buteegdehuun.html?category=cake">cake</a></li>
+                  <li>
+                    <a href="/buteegdehuun.html?category=breads">breads</a>
+                  </li>
+                  <li>
+                    <a href="/buteegdehuun.html?category=desserts">desserts</a>
+                  </li>
+                  <li>
+                    <a href="/buteegdehuun.html?category=drinks">drinks</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -124,7 +130,11 @@
           <div class="feedback2">
             <h2>Санал хүсэлт</h2>
             <form action="/action_page.php">
-              <input type="email" placeholder="энд email ээ оруулна уу." class="email">
+              <input
+                type="email"
+                placeholder="энд email ээ оруулна уу."
+                class="email"
+              />
             </form>
             <textarea
               id="feedback"
@@ -133,7 +143,9 @@
               cols="50"
               placeholder="Энд бичнэ үү..."
             ></textarea>
-            <button type="button" class="send" onclick="emailsend()">Илгээх</button>
+            <button type="button" class="send" onclick="emailsend()">
+              Илгээх
+            </button>
           </div>
         </div>
       </div>

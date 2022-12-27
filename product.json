@@ -6,7 +6,8 @@
     "image": "/picture/freshpearlcake.jpg",
     "description": "Цэвэр сүүн кремтэй хөвсгөр зөөлөн цагаан кекстэй жимсний коктейл хавчуургатай гүзээлзгэнэ нэрсээр чимэглэсэн амтат бялуу Хэмжээ-21см",
     "price": 55900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 102,
@@ -15,7 +16,8 @@
     "image": "/picture/strawberrycake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 45000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 103,
@@ -24,7 +26,8 @@
     "image": "/picture/nomurocake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 45000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 104,
@@ -33,7 +36,8 @@
     "image": "/picture/mangocloudcake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 55900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 105,
@@ -42,7 +46,8 @@
     "image": "/picture/yogurtcake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 49900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 106,
@@ -51,7 +56,8 @@
     "image": "/picture/fruitcreamcake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 55900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 107,
@@ -60,7 +66,8 @@
     "image": "/picture/blueberrychiffoncake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 55900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 108,
@@ -69,7 +76,8 @@
     "image": "/picture/rollroundcake.jpg",
     "description": "Дотроо нэрс жимсний чанамалтай, цагаан шоколад болон нэрс жимсээр чимэглэсэн сүүн кремтэй бялуу Хэмжээ-18см",
     "price": 49900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 201,
@@ -78,7 +86,8 @@
     "image": "/picture/tomate-chicken.png",
     "description": "Тахианы цээж махыг Chepotle соусаар амталсан пастри",
     "price": 4400,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 202,
@@ -87,7 +96,8 @@
     "image": "/picture/mini-cor.jpg",
     "description": "Пицца соусан дээр амтат эрдэнэ шиш болон мозарелла бяслаг хийж шарсан мини пэстри",
     "price": 3100,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 203,
@@ -96,7 +106,8 @@
     "image": "/picture/tomate-chicken.png",
     "description": "Фокачча талхан дээр халуун ногоотой тахианы махаар чимэглэж амталсан талх",
     "price": 4800,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 204,
@@ -105,7 +116,8 @@
     "image": "/picture/long-sausage.jpg",
     "description": "Урт зайдсыг гичээр амталсан амтат талх",
     "price": 4800,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 205,
@@ -114,7 +126,8 @@
     "image": "/picture/pizza-bauette.jpg",
     "description": "Багет талхан дээр пиццаны орц болон моцералла бяслаг дүүрэн орсон талх",
     "price": 4400,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 206,
@@ -123,7 +136,8 @@
     "image": "/picture/pizza-hawai.jpg",
     "description": "Чихэрлэг цитрон соустай, хан боргоцой, салями хиамаар чимэглэсэн багет талх",
     "price": 6000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 207,
@@ -132,7 +146,8 @@
     "image": "/picture/chicken-mayo.jpg",
     "description": "Терияки соус болон цуу бага зэргийн халуун ногоогоор амталсан тахианы цээж махтай өег талх",
     "price": 4400,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 301,
@@ -141,7 +156,8 @@
     "image": "/picture/darkchoc-muffin.jpg",
     "description": "Дотроо бүхэл шоколадтай, зөөлөн тослог кекс",
     "price": 5900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 302,
@@ -150,7 +166,8 @@
     "image": "/picture/chocolatecookie.jpg",
     "description": "Хушга, жижиг шоколадтай жигнэмэг",
     "price": 5900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 303,
@@ -159,7 +176,8 @@
     "image": "/picture/nuts-cookie.jpg",
     "description": "Шоколад, цангис, самартай жигнэмэг",
     "price": 5900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 304,
@@ -168,7 +186,8 @@
     "image": "/picture/chip-cookie.jpg",
     "description": "Шоколадтай жигнэмэг",
     "price": 5900,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 401,
@@ -177,7 +196,8 @@
     "image": "/picture/caffelatte.jpg",
     "description": "Зөөлөн амтат бага зэргийн сүүний хөөстэй сүүтэй халуун кофе.",
     "price": 7000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 402,
@@ -186,7 +206,8 @@
     "image": "/picture/americano.jpg",
     "description": "Зөөлөн амтат хар халуун кофе",
     "price": 7000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 403,
@@ -195,7 +216,8 @@
     "image": "/picture/cappuccino.jpg",
     "description": "Зөөлөн амтат хөвсгөр сүүний хөөс ихтэй халуун кофе.",
     "price": 7000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 404,
@@ -204,7 +226,8 @@
     "image": "/picture/caramel-macho.jpg",
     "description": "Карамельтэй чихэрлэг амтат халуун кофе.",
     "price": 7500,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 405,
@@ -213,7 +236,8 @@
     "image": "/picture/americano-iced.jpg",
     "description": "Зөөлөн амтат мөстэй хар кофе.",
     "price": 6500,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 406,
@@ -222,7 +246,8 @@
     "image": "/picture/latte-iced.jpg",
     "description": " Зөөлөн амтат мөстэй сүүтэй кофе.",
     "price": 7000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 407,
@@ -231,7 +256,8 @@
     "image": "/picture/mocha-iced.jpg",
     "description": "Шоколадны амтат мөстэй сүүтэй кофе.",
     "price": 7500,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 408,
@@ -240,7 +266,8 @@
     "image": "/picture/caramel-iced.jpg",
     "description": "Карамельтэй чихэрлэг амтат мөстэй кофе.",
     "price": 7000,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   },
   {
     "id": 409,
@@ -249,6 +276,7 @@
     "image": "/picture/vanilla-iced.jpg",
     "description": "Ванилийн чихэрлэг зөөлөн амтат мөстэй сүүтэй кофе",
     "price": 7500,
-    "button": "shopping()"
+    "button": "shopping()",
+    "count": 0
   }
 ]
