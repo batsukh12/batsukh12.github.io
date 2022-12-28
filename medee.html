@@ -23,7 +23,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>TousLesJoursMongolia</title>
     <style>
@@ -51,9 +50,9 @@
         color: #2e2f2e;
         font-family: "Mulish", sans-serif !important;
       }
-      article:hover {
+      /* article:hover {
         background: #fff;
-      }
+      } */
       article div {
         width: 40%;
         height: 100%;
@@ -64,17 +63,18 @@
         color: #2e2f2e;
         justify-content: center;
       }
-      article div h4 {
+      article div h1 {
         margin-top: 10%;
         margin-bottom: 10%;
         color: #2e2f2e;
+        font-size: 80%;
       }
       article div a {
         background-color: #eeeded;
         padding: 1.5%;
         text-align: center;
         color: #2e2f2e;
-        width: 60%;
+        width: 80%;
       }
       article div a:hover {
         color: #eeeded;
@@ -107,10 +107,10 @@
         }
         render() {
           return `<article>
-          <img src="${this.image}" />
+          <img alt="medeenii zurag" src="${this.image}" />
           <div>
             <p>${this.date}</p>
-            <h4>${this.title}</h4>
+            <h1>${this.title}</h1>
             <a href="${this.tovch}">Дэлгэрэнгүй</a>
           </div>
         </article>`;
@@ -134,7 +134,7 @@
       const newsData = {
         articles: [
           {
-            image: "/picture/medee1.jpg",
+            image: "/picture/taniltsuulga-cake.jpg",
             date: "2022-06-02",
             title: "Сонгогдсон бараанууд 30% хямдарлаа",
             tovch: "index.html",
@@ -171,9 +171,9 @@
       </h1>
       <nav class="mid-menu">
         <ul>
-          <div class="dropbtn">
-            <li>
-              <a href="#">Бүтээгдэхүүн</a>
+          <li>
+            <div class="dropbtn">
+              <a href="/buteegdehuun.html?category=cake">Бүтээгдэхүүн</a>
               <div class="dropdown-menu">
                 <ul>
                   <li><a href="/buteegdehuun.html?category=cake">cake</a></li>
@@ -188,8 +188,8 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </div>
+            </div>
+          </li>
           <li><a href="/medee.html">Мэдээлэл</a></li>
           <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
         </ul>
@@ -217,7 +217,7 @@
     <footer class="footer">
       <section>
         <div>
-          <h3>Бидэнтэй холбогдох :</h3>
+          <h1>Бидэнтэй холбогдох :</h1>
           <address>
             <i class="fa fa-globe" style="color: white"></i>
             Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж,

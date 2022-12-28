@@ -18,13 +18,13 @@ class cakeItems {
             <div class="products-nuur" >
               <a href="/prod-delgerengui.html">
                 <img src="${this.image}" alt="pearl_cake" />
-                <h4>${this.name}</h4>
-                <h6>
+                <h1>${this.name}</h1>
+                <h1 class="productDescription">
                  ${this.description}
-                </h6>
+                </h1>
               </a>
               <div class="prod-price">
-                <h5>${this.price}</h5>
+                <h1>${this.price}</h1>
                 <div class="button" onclick="${this.button}">
                   сагслах
                 </div>

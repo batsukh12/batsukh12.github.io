@@ -23,7 +23,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>TousLesJoursMongolia</title>
   </head>
@@ -34,9 +33,9 @@
       </h1>
       <nav class="mid-menu">
         <ul>
-          <div class="dropbtn">
-            <li>
-              <a href="#">Бүтээгдэхүүн</a>
+          <li>
+            <div class="dropbtn">
+              <a href="/buteegdehuun.html?category=cake">Бүтээгдэхүүн</a>
               <div class="dropdown-menu">
                 <ul>
                   <li><a href="/buteegdehuun.html?category=cake">cake</a></li>
@@ -51,8 +50,8 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </div>
+            </div>
+          </li>
           <li><a href="/medee.html">Мэдээлэл</a></li>
           <li><a href="/taniltsuulga.html">Танилцуулга</a></li>
         </ul>
@@ -95,11 +94,11 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
               </div>
-              <h4>Vanilla choco heart cake</h4>
-              <h6>
+              <h3 class="productName">Vanilla choco heart cake</h3>
+              <h3 class="productDescription">
                 Шоколадан кекс, шоколадан мүүстэй, цагаан кекс ванильтай мүүс
                 бялуу Хэмжээ-15см
-              </h6>
+              </h3>
             </a>
           </div>
           <div class="products-nuur">
@@ -112,11 +111,11 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
               </div>
-              <h4>Gateau</h4>
-              <h6>
+              <h3 class="productName">Gateau</h3>
+              <h3 class="productDescription">
                 Шоколадтай кекс болон цэвэр маслон кремтэй шоколадны
                 хавчуургатай, жижиг шоколадан жигнэмэгээр чимэглэсэн Хэмжээ-18см
-              </h6>
+              </h3>
             </a>
           </div>
           <div class="products-nuur">
@@ -129,11 +128,11 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
               </div>
-              <h4>Berry berry tart</h4>
-              <h6>
+              <h3 class="productName">Berry berry tart</h3>
+              <h3 class="productDescription">
                 Кастард болон Алмонд кремний хавчуургатай ойн жимсээр баялаг
                 торт
-              </h6>
+              </h3>
             </a>
           </div>
           <div class="products-nuur">
@@ -146,12 +145,12 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
               </div>
-              <h4>Rose mix berry cake</h4>
-              <h6>
+              <h3 class="productName">Rose mix berry cake</h3>
+              <h3 class="productDescription">
                 тусгайлан бэлтгэсэн зөгийн бал, жимсний чанамал болон
                 гүзээлзгэний чанамалыг хавчуулсан, цагаан шоколад болон
                 гүзээлзгэнээр чимэглэсэн. Хэмжээ-18см
-              </h6>
+              </h3>
             </a>
           </div>
         </div>
@@ -163,13 +162,17 @@
         <div>
           <a href="/medee.html"
             ><img src="picture/10.jpg" alt="salbar1" />
-            <h5>“Хүннү-2222” хороололд шинэ салбараа нээлээ...</h5>
+            <h4 style="color: #000">
+              “Хүннү-2222” хороололд шинэ салбараа нээлээ...
+            </h4>
           </a>
         </div>
         <div>
           <a href="/medee.html"
             ><img src="picture/medee2.jpg" alt="salbar2" />
-            <h5>“Найрсаг хамт олон өдөр бүр таныг угтаж байна.”</h5>
+            <h4 style="color: #000">
+              “Найрсаг хамт олон өдөр бүр таныг угтаж байна.”
+            </h4>
           </a>
         </div>
       </div>
@@ -177,7 +180,7 @@
     <footer class="footer">
       <section>
         <div>
-          <h3>Бидэнтэй холбогдох :</h3>
+          <h1>Бидэнтэй холбогдох :</h1>
           <address>
             <i class="fa fa-globe" style="color: white"></i>
             Монгол Улс, Улаанбаатар хот, ХУД, 18-р хороо, Их Монгол гудамж,
