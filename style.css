@@ -311,7 +311,6 @@
   height: 30px;
 }
 .main-products .products-nuur {
-  position: flex;
   margin-top: 4%;
   background: #ffffff;
   border: 2px solid rgba(205, 133, 63, 0.4);
@@ -389,11 +388,10 @@
 .home .surdchilgaa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: auto;
+  gap: 4rem;
   margin-left: 5%;
   margin-right: 5%;
   justify-content: center;
-  position: flex;
   text-align: center;
   overflow: hidden;
 }
@@ -499,7 +497,6 @@
 .home-prod-d .holbootoi-buteegdehuun h3 {
   bottom: 5rem;
   left: 5rem;
-  justify-content: bottom;
 }
 /*-----------footer-------------*/
 
