@@ -7,7 +7,7 @@
   --foot-color: #2e2f2e;
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   --brand-color: #0d4633;
-  --eng-font: "Open Sans";
+  --eng-font: "Aref Ruqaa";
   --mongolia-font: "Mulish", sans-serif !important;
 }
 * {
@@ -250,7 +250,6 @@
 }
 
 .productName {
-  font: var(--eng-font);
   font-size: 140%;
 }
 
@@ -353,7 +352,6 @@
   color: #0d4633;
 }
 .main-products .products-nuur .button {
-  margin-top: 0.5rem;
   cursor: pointer;
   font-family: var(--mongolia-font);
   font-size: 1rem;
