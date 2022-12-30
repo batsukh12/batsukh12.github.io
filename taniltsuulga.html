@@ -130,12 +130,38 @@
         padding: 1rem 0;
         line-height: 1.8;
       }
-      /*----map---*/
-      .contact .map iframe{
-       width: 100%;
-       display: flex;
-       width: 600px;
-       height: 450px;
+      /*----salbar---*/
+      .contact .box-container {
+        display: grid;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 4%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+      .contact .box-container .box {
+        padding: 3rem;
+        text-align: center;
+        border: var(--border);
+      }
+      .contact .box-container .box img {
+        height: 15rem;
+        width: 20rem;
+      }
+
+      .contact .box-container .box p {
+        padding-top: 2rem;
+        font-family: "Mulish", sans-serif !important;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.6rem;
+      }
+
+      .contact .box-container .box:hover {
+        background: #fff;
+      }
+
       }     
       /*----about duusav---*/
     </style>
@@ -334,10 +360,47 @@
         </div>
       </section>
       <section class="contact" id="contact">
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85456.60060042098!2d106.811895127351!3d47.98436080743725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96925198d597a5%3A0x38741835bb9fe39d!2sTous%20Les%20Jours-%20Huuhdiin%20100!5e0!3m2!1smn!2smn!4v1668699057113!5m2!1smn!2smn"></iframe>
+          
+        <div class="box-container">
+          <div class="box">
+            <img src="https://cdn.greensoft.mn/uploads/users/1977/images/tlj/Hu-mall-new.jpg" alt="" />
+            <h4>
+              ХҮННҮ МОЛЛ
+            </h4>
+            <p>
+              Утас-1: 7510-0150
+              Утас-2: 9510-5817
+              
+              Даваа-Баасан: 09:00-21:30
+            </p>
+          </div>
+
+          <div class="box">
+            <img src="https://cdn.greensoft.mn/uploads/users/1977/images/tlj/zstar.jpg" alt="" />
+            <h4>
+              ЗАЙСАН СТАР
+            </h4>
+            <p>
+              Утас-1: 7510-0107
+              Утас-2: 9510-5815
+              Даваа-Ням: 09:00-21:00
+            </p>
+          </div>
+
+          <div class="box">
+            <img src="https://cdn.greensoft.mn/uploads/users/1977/images/tlj/UID.jpg" alt="" />
+            <h4>
+              УЛСЫН ИХ ДЭЛГҮҮР
+            </h4>
+            <p>
+              Утас-1: 7510-0152
+              Утас-2: 9510-5816
+
+              Даваа-Ням: 09:00-21:30
+            </p>
+          </div>
         </div>
-      </section>
+    </section>
     </main>
     <footer class="footer">
       <section>
