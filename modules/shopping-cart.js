@@ -12,9 +12,6 @@ class cakeItems {
       (this.count = cake.count);
   }
   render() {
-    function plus() {
-      this.count += 1;
-    }
     return `
             <article>
               <div class="products-nuur" >
