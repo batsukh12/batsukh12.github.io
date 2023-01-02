@@ -24,7 +24,7 @@ class cakeItems {
                 </h1>
               </a>
               <div class="prod-price">
-                <h1>${this.price}</h1>
+                <h1 id="productPrice">${this.price}</h1>
                 <div class="button" onclick="${this.button}">
                   сагслах
                 </div>

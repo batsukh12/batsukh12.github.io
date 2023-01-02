@@ -1,25 +1,26 @@
-// /** menu bar  */
-// $(document).ready(function() {
-//     $('#menu-btn').click(function() {
-//         $(this).toggleClass('fa fa-times');
-//         $('.mid-menu').toggleClass('nav-toggle');
-//     });
-// });
+$(document).ready(function () {
+  console.log("amjilttai");
+  $("#menu-btn").click(function () {
+    $(this).toggleClass("fa fa-times");
+    $(".mid-menu").toggleClass("nav-toggle");
+  });
+});
 /** buteegdehuun nemeh func */
 var click = 0;
 function plus() {
   click++;
+  console.log("eheheh");
   document.getElementById("count").innerHTML = click;
   return click;
 }
 function minus() {
-  //   if (click == 0) {
-  //     alert("aldaa!!");
-  //     document.getElementById("count").innerHTML = 0;
-  //   } else {
-  click--;
-  document.getElementById("count").innerHTML = click;
-  //}
+  if (click == 0) {
+    alert("aldaa!!");
+    document.getElementById("count").innerHTML = 0;
+  } else {
+    click--;
+    document.getElementById("count").innerHTML = click;
+  }
 }
 /** ongo ogno */
 function listChange() {
@@ -28,13 +29,8 @@ function listChange() {
 }
 /***   shop bot sagsalah too */
 var count = 0;
-function shopping() {
+function shopping(id) {
+  console.log(id);
   count++;
   document.getElementById("shop-count").innerHTML = count;
-  return count;
 }
-/*  email huleeej awah  */
-function emailsend() {
-  alert("таны хүсэлтийг хүлээн авлаа.");
-}
-/* buteegdehuun sagsand nemeh*/
