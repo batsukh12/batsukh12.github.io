@@ -302,10 +302,6 @@
   text-align: center;
   overflow: hidden;
 }
-.main-products .products-nuur img {
-  width: 30px;
-  height: 30px;
-}
 .main-products .products-nuur {
   margin-top: 4%;
   background: #ffffff;
@@ -325,7 +321,6 @@
   padding-top: 10px;
   text-align: center;
   width: 80%;
-  height: 70%;
 }
 .main-products .products-nuur h4 {
   padding-top: 0.5rem;
@@ -377,7 +372,6 @@
 .home .drinks-surdchilgaa img {
   margin-top: 2rem;
   width: 100%;
-  height: 80%;
   justify-content: center;
 }
 .home .surdchilgaa {
@@ -393,7 +387,6 @@
 .home .surdchilgaa img {
   margin-top: 2rem;
   width: 90%;
-  height: 80%;
   box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
 }
 .home .surdchilgaa img:hover {
