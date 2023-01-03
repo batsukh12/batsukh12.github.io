@@ -48,11 +48,7 @@ export default class cakepage {
     fetch(`${this.cakepageUrl}`)
       .then((res) => {
         res.json().then((jsob) => {
-          if (!params.get("category") || params.get("ungu")) {
-            var filterCake = jsob.record.filter(
-              (cakeItems) => cakeItems.category == "cake"
-            );
-          } else if (params.get("category") == "cake") {
+           if (params.get("category") == "cake") {
             var filterCake = jsob.record.filter(
               (cakeItems) => cakeItems.category == "cake"
             );
