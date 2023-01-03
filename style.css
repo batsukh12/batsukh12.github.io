@@ -682,3 +682,17 @@
     display: flex;
   }
 }
+
+.productCount {
+  display: flex;
+}
+
+article > button {
+  background-color: #fff;
+}
+
+#sagsFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

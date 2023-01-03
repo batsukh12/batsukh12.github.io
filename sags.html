@@ -165,6 +165,23 @@
         }
       }
     </style>
+    <script>
+      function Clean() {
+        fetch(`https://tlj-backend.vercel.app/product/clean`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ title: "Fetch PUT Request Example" }),
+        })
+          .then((data) => {
+            console.log("Sags tseverlegdlee.");
+            gebi("totalValue").innerHTML = 0;
+            window.location.reload();
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    </script>
   </head>
 
   <body>
@@ -313,12 +330,21 @@
           </div>
         </div>
       </section>
-      <div class="products-container" id="target-sags">
-        <script type="module">
-          import cakepage from "/modules/shopping-cart.js";
-        </script>
-        <!--json huleen awna-->
-      </div>
+      <section class="main-products">
+        <div class="products-container" id="target-sags">
+          <script type="module">
+            import cakepage from "/modules/shopping-cart.js";
+          </script>
+          <!--json huleen awna-->
+        </div>
+        <div id="sagsFooter" class="foot">
+          <h1 id="tuluhDun">Таны төлөх дүн:</h1>
+          <div id="totalValue" class="dun"></div>
+          <button id="clean" onclick="Clean()" class="btn">
+            Сагс цэвэрлэх
+          </button>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <section>
@@ -356,3 +382,24 @@
     </footer>
   </body>
 </html>
+<style>
+  .sagsfooter {
+    margin: 2%;
+  }
+  .btn {
+    margin-left: 10rem;
+    border: 1px solid black;
+    background-color: yellow;
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+  }
+  .dun {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .foot {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+</style>

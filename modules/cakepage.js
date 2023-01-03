@@ -1,3 +1,5 @@
+const gebi = (id) => document.getElementById(id);
+
 class cakeItems {
   constructor(cake) {
     (this.id = cake.id),
@@ -6,11 +8,8 @@ class cakeItems {
       (this.image = cake.image),
       (this.description = cake.description),
       (this.price = cake.price),
-      (this.button = cake.shopping),
+      (this.button = cake.button),
       (this.count = cake.count);
-  }
-  parser() {
-    console.log(this.id);
   }
   render() {
     return `
@@ -25,7 +24,7 @@ class cakeItems {
               </a>
               <div class="prod-price">
                 <h1 id="productPrice">${this.price}</h1>
-                <div class="button" onclick="${this.button}">
+                <div id="${this.id}" class="button" >
                   сагслах
                 </div>
              </div>
@@ -35,12 +34,14 @@ class cakeItems {
   }
 }
 
+var too = 0;
+gebi("shopCount").innerHTML = too;
+
 const params = new URLSearchParams(window.location.search);
 export default class cakepage {
   constructor(cakepageUrl) {
     this.cakepageUrl = cakepageUrl;
   }
-
   //download then filter() then map() then reduce()
   Download(targetElement) {
     console.log(this.cakepageUrl);
@@ -75,9 +76,26 @@ export default class cakepage {
                 const _map = new cakeItems(element);
                 return _map.render();
               })
-
               .reduce((prevVal, curVal) => prevVal + curVal, "")
           );
+          filterCake.map((element) => {
+            const _map = new cakeItems(element);
+            document.getElementById(_map.id).addEventListener("click", () => {
+              fetch(`https://tlj-backend.vercel.app/product/plus/${_map.id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ title: "Fetch PUT Request Example" }),
+              })
+                .then((data) => {
+                  console.log(data);
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
+              too++;
+              gebi("shopCount").innerHTML = too;
+            });
+          });
         });
       })
       .catch((err) => {
@@ -85,7 +103,6 @@ export default class cakepage {
       });
   }
 }
-const gebi = (id) => document.getElementById(id);
 const cakepg = new cakepage(
   "https://api.jsonbin.io/v3/b/63a15b1f15ab31599e20bcb8"
 );
